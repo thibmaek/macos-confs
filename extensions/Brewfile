@@ -1,0 +1,80 @@
+#####################
+# Brewfile with casks
+# Make sure boneyard is tapped
+##############################
+
+update
+upgrade
+
+####
+# Brew formulas
+###############
+
+install bash
+install coreutils
+install findutils
+install git-ftp
+install mackup
+install nmap
+install openssl
+install openssl-dev
+install pyenv
+install speedtest_cli
+install terminal-notifier
+install tree
+install wget with-iri
+install wifi-password
+install homebrew/php/php55 --with-gmp
+
+tap bramstein/fonttools
+install sfnt2woff-zopfli
+
+tap thoughtbot/formulae
+install gitsh
+
+tap homebrew/completions
+install grunt-completion
+install ruby-completion
+install vagrant-completion
+
+brew tap caskroom/versions
+install caskroom/cask/brew-cask
+
+###
+# Casks
+#######
+cask install atom
+cask install github
+cask install google-chrome
+cask install iterm2
+cask install mamp
+cask install shuttle
+cask install vagrant
+cask install vagrant-manager
+cask install wireshark
+
+cask install cloud
+cask install evernote
+cask install dropbox
+cask install infinit
+cask install glueprint
+cask install screenhero
+cask install sketch-toolbox
+cask install spectacle
+
+cask install qlcolorcode
+cask install qlimagesize
+cask install qlmarkdown
+cask install qlstephen
+cask install quicklook-csv
+cask install quicklook-json
+cask install suspicious-package
+
+cask install coconutbattery
+cask install lastfm
+cask install transmission
+cask install spotifree
+cask install spotify
+cask install vlc
+
+cleanup

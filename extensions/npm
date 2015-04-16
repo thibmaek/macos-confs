@@ -1,0 +1,13 @@
+#!/bin/sh
+
+modules=(
+  bower
+  grunt-cli
+  gulp
+  surge
+  tmi
+  uncss
+  vtop
+)
+
+npm install -g ${modules[@]}
