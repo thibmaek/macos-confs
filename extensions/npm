@@ -2,12 +2,14 @@
 
 modules=(
   bower
+  bower-update
   grunt-cli
   gulp
   surge
   tmi
   uncss
   vtop
+  yo
 )
 
 npm install -g ${modules[@]}

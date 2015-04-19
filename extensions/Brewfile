@@ -49,6 +49,7 @@ cask install google-chrome
 cask install iterm2
 cask install mamp
 cask install shuttle
+cask install virtualbox
 cask install vagrant
 cask install vagrant-manager
 cask install wireshark
