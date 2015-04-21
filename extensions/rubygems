@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+sudo -v
+
+GEMS=(
+  bitters
+  bourbon
+  compass
+  glynn
+  jekyll
+  neat
+  sass
+  scss-lint
+  terminal-notifier
+)
+
+for gem in ${GEMS[@]}; do
+  sudo gem install $gem
+done
