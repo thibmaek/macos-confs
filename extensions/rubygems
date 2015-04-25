@@ -5,6 +5,7 @@ GEMS=(
   bitters
   bourbon
   compass
+  cocoapods
   glynn
   jekyll
   neat
