@@ -6,6 +6,7 @@ GEMS=(
   bourbon
   compass
   cocoapods
+  facter
   glynn
   jekyll
   neat
@@ -15,5 +16,5 @@ GEMS=(
 )
 
 for gem in ${GEMS[@]}; do
-  sudo gem install $gem
+  gem install $gem
 done
