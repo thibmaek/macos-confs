@@ -19,6 +19,7 @@ install nmap
 install openssl
 install openssl-dev
 install pyenv
+install ssh-copy-id
 install speedtest_cli
 install terminal-notifier
 install tree
