@@ -74,6 +74,7 @@ cask install suspicious-package
 
 cask install coconutbattery
 cask install lastfm
+cask install tunnelbear
 cask install transmission
 cask install spotifree
 cask install spotify
