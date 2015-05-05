@@ -41,7 +41,7 @@ cd ./modules && ./ruby.sh && cd ../
 
 # 9. Install Rubygems.
 echo "Installing some gems 💎"
-cd ./extensions && ./rubygems && cd ../
+cd ./extensions && bundle install && cd ../
 
 # Reload modified applications
 for app in "Activity Monitor" "Address Book" "Calendar" "Contacts" "cfprefsd" \
