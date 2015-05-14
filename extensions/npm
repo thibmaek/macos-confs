@@ -5,6 +5,7 @@ modules=(
   bower-update
   grunt-cli
   gulp
+  nodemon
   surge
   tmi
   uncss
