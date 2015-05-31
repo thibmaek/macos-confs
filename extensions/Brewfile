@@ -1,84 +1,79 @@
-#####################
-# Brewfile with casks
-# Make sure boneyard is tapped
-##############################
+tap 'bramstein/fonttools'
+tap 'thoughtbot/formulae'
+tap 'homebrew/completions'
+tap 'caskroom/versions'
 
-update
-upgrade
+brew 'bash'
+brew 'bash-completion'
+brew 'caskroom/cask/brew-cask'
+brew 'ccat'
+brew 'coreutils'
+brew 'findutils'
+brew 'git-ftp'
+brew 'gitsh'
+brew 'grunt-completion'
+brew 'imagemagick', args: ['with-libtiff']
+brew 'mackup'
+brew 'nmap'
+brew 'openssl'
+brew 'openssl-dev'
+brew 'homebrew/php/php55', args: ['with-gmp']
+brew 'pyenv'
+brew 'resty'
+brew 'ruby-completion'
+brew 'ssh-copy-id'
+brew 'terminal-notifier'
+brew 'tree'
+brew 'vagrant-completion'
+brew 'wget', args: ['with-iri']
+brew 'wifi-password'
+brew 'sfnt2woff-zopfli'
 
-####
-# Brew formulas
-###############
+# ================================= #
 
-install bash
-install coreutils
-install findutils
-install git-ftp
-install mackup
-install nmap
-install openssl
-install openssl-dev
-install pyenv
-install ssh-copy-id
-install speedtest_cli
-install terminal-notifier
-install tree
-install wget with-iri
-install wifi-password
-install homebrew/php/php55 --with-gmp
-
-tap bramstein/fonttools
-install sfnt2woff-zopfli
-
-tap thoughtbot/formulae
-install gitsh
-
-tap homebrew/completions
-install grunt-completion
-install ruby-completion
-install vagrant-completion
-
-brew tap caskroom/versions
-install caskroom/cask/brew-cask
-
-###
-# Casks
-#######
-cask install atom
-cask install github
-cask install google-chrome
-cask install iterm2
-cask install mamp
-cask install shuttle
-cask install virtualbox
-cask install vagrant
-cask install vagrant-manager
-cask install wireshark
-
-cask install cloud
-cask install evernote
-cask install dropbox
-cask install infinit
-cask install glueprint
-cask install screenhero
-cask install slack
-cask install sketch-toolbox
-cask install spectacle
-
-cask install qlcolorcode
-cask install qlimagesize
-cask install qlmarkdown
-cask install qlstephen
-cask install quicklook-csv
-cask install quicklook-json
-cask install suspicious-package
-
-cask install coconutbattery
-cask install lastfm
-cask install tunnelbear
-cask install transmission
-cask install spotifree
-cask install spotify
-cask install vlc
-
-cleanup
+cask 'atom'
+cask 'asepsis'
+cask 'caffeine'
+cask 'clipmenu'
+cask 'coconutbattery'
+cask 'colorpicker-skalacolor'
+cask 'dropbox'
+cask 'evernote'
+cask 'gifrocket'
+cask 'github'
+cask 'glueprint'
+cask 'google-chrome'
+cask 'google-photos-backup'
+cask 'infinit'
+cask 'iterm2'
+cask 'kontroll'
+cask 'mactracker'
+cask 'mamp'
+cask 'messenger'
+cask 'noizio'
+cask 'qlcolorcode'
+cask 'qlimagesize'
+cask 'qlmarkdown'
+cask 'qlstephen'
+cask 'quicklook-csv'
+cask 'quicklook-json'
+cask 'shuttle'
+cask 'sketch-toolbox'
+cask 'slack'
+cask 'soulseek'
+cask 'spectacle'
+cask 'spotifree'
+cask 'spotify'
+cask 'suspicious-package'
+cask 'tether'
+cask 'thyme'
+cask 'transmission'
+cask 'tripmode'
+cask 'tunnelbear'
+cask 'typora'
+cask 'virtualbox'
+cask 'vagrant'
+cask 'vagrant-manager'
+cask 'vlc'
+cask 'wireshark'
+cask 'xquartz'
