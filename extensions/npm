@@ -3,6 +3,7 @@
 modules=(
   bower
   bower-update
+  cut-release
   grunt-cli
   gulp
   nodemon

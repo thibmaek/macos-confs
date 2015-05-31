@@ -14,5 +14,5 @@ if ! [[ which brew ]]; then
   echo "brew not installed/found!"
   return
 else
-  brew tap homebrew/boneyard
+  brew tap Homebrew/bundle
 fi

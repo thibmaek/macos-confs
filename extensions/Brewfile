@@ -61,6 +61,7 @@ cask install dropbox
 cask install infinit
 cask install glueprint
 cask install screenhero
+cask install slack
 cask install sketch-toolbox
 cask install spectacle
 
