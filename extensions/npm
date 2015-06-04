@@ -3,6 +3,7 @@
 modules=(
   bower
   bower-update
+  caniuse-cmd
   cut-release
   grunt-cli
   gulp
