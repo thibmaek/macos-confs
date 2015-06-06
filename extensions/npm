@@ -8,6 +8,7 @@ modules=(
   grunt-cli
   gulp
   nodemon
+  pageres
   surge
   tmi
   uncss
