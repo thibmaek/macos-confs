@@ -43,6 +43,10 @@ cd ./modules && ./ruby.sh && cd ../
 echo "Installing some gems 💎"
 cd ./extensions && bundle install && cd ../
 
+# 10. Install APM packages & themes
+echo "Installing apm packages…"
+cd ./extensions && apm install --packages-file apm.txt && cd ../
+
 # Reload modified applications
 for app in "Activity Monitor" "Address Book" "Calendar" "Contacts" "cfprefsd" \
 "Dock" "Finder" "Mail" "Messages" "Safari" "SystemUIServer" \
