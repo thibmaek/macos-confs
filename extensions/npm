@@ -13,6 +13,7 @@ modules=(
   tmi
   uncss
   vtop
+  webpack
   yo
 )
 
