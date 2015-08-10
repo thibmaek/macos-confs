@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-curl https://raw.githubusercontent.com/creationix/nvm/v0.24.1/install.sh | bash
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.25.4/install.sh | bash
 
 # nvm sources in the .bashrc by default. If .bash_profile
 # is available, this if sources it in the .bash_profile instead.
