@@ -47,10 +47,16 @@ cd ./extensions && bundle install && cd ../
 echo "Installing apm packages…"
 cd ./extensions && apm install --packages-file apm.txt && cd ../
 
+# 11. Installing dotfiles
+echo "Installing dotfiles in ~"
+git clone https://github.com/thibmaek/dotfiles.git ~
+
 # Reload modified applications
 for app in "Activity Monitor" "Address Book" "Calendar" "Contacts" "cfprefsd" \
 "Dock" "Finder" "Mail" "Messages" "Safari" "SystemUIServer" \
-"Terminal" "Transmission" "Twitter"; do
+"Transmission" "Twitter"; do
 	killall "${app}" > /dev/null 2>&1
 done
 echo "Done. Note that some of these changes require a logout/restart to take effect."
+echo "Now reloading shell…"
+exec $SHELL -l
