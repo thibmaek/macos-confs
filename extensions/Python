@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
 pyenv update
-pyenv install 2.7.7
 pyenv install 3.4.0
 pyenv shell 3.4.0
