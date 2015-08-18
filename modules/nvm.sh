@@ -12,8 +12,6 @@ fi
 # As long as the shell is not loaded `nvm` is unknown to the shell
 # The shell will restart after worker is finished.
 # For now they are run directly from the shell script in the nvm directory.
-$NVM_DIR/nvm.sh install 0.11
 $NVM_DIR/nvm.sh install 0.12
 $NVM_DIR/nvm.sh alias stable 0.12
-$NVM_DIR/nvm.sh alias default 0.11
-$NVM_DIR/nvm.sh use 0.11
+$NVM_DIR/nvm.sh use stable
