@@ -2,13 +2,15 @@
 
 modules=(
   bower
-  bower-update
   caniuse-cmd
-  cut-release
+  cordova
+  fffast
   grunt-cli
   gulp
   nodemon
   pageres
+  slap
+  speed-test
   surge
   tmi
   uncss
@@ -17,4 +19,9 @@ modules=(
   yo
 )
 
+generators=(
+  generator-meanstack
+)
+
 npm install -g ${modules[@]}
+npm install -g ${generators[@]}
