@@ -13,5 +13,6 @@ fi
 # The shell will restart after worker is finished.
 # For now they are run directly from the shell script in the nvm directory.
 $NVM_DIR/nvm.sh install 0.12
-$NVM_DIR/nvm.sh alias stable 0.12
-$NVM_DIR/nvm.sh use stable
+$NVM_DIR/nvm.sh install v4.0.0
+$NVM_DIR/nvm.sh alias default 0.12
+$NVM_DIR/nvm.sh use default
