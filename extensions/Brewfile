@@ -3,6 +3,7 @@ tap 'thoughtbot/formulae'
 tap 'homebrew/completions'
 tap 'caskroom/versions'
 
+brew 'apm-bash-completion'
 brew 'bash'
 brew 'bash-completion'
 brew 'caskroom/cask/brew-cask'
