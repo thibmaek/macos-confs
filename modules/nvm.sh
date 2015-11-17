@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.26.1/install.sh | bash
+curl -o- https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
 
 # nvm sources in the .bashrc by default. If .bash_profile
 # is available, this if sources it in the .bash_profile instead.
@@ -12,8 +12,6 @@ fi
 # As long as the shell is not loaded `nvm` is unknown to the shell
 # The shell will restart after worker is finished.
 # For now they are run directly from the shell script in the nvm directory.
-$NVM_DIR/nvm.sh install 0.12
-$NVM_DIR/nvm.sh install v4.1.0
-$NVM_DIR/nvm.sh alias 4 v4.1.0
-$NVM_DIR/nvm.sh alias default 0.12
-$NVM_DIR/nvm.sh use default
+$NVM_DIR/nvm.sh install v5.0.0
+$NVM_DIR/nvm.sh install v4.2.2
+$NVM_DIR/nvm.sh alias default v4.2.2
