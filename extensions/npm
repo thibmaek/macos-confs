@@ -2,17 +2,16 @@
 
 modules=(
   bower
-  caniuse-cmd
   cordova
-  fffast
+  forever
   grunt-cli
   gulp
   nodemon
-  pageres
-  slap
+  pageres-cli
   speed-test
   surge
   tmi
+  trash-cli
   uncss
   vtop
   webpack
@@ -20,7 +19,8 @@ modules=(
 )
 
 generators=(
-  generator-meanstack
+  generator-devine-project
+  generator-generator
 )
 
 npm install -g ${modules[@]}
