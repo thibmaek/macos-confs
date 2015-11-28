@@ -1,15 +1,15 @@
 #!/usr/bin/env bash
 
 modules=(
+  babel-cli
   bower
-  cordova
+  eslint
   forever
   grunt-cli
   gulp
+  node-gyp
   nodemon
-  pageres-cli
   speed-test
-  surge
   tmi
   trash-cli
   uncss
