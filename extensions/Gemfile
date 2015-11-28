@@ -1,11 +1,9 @@
 # ~/Gemfile
 source "http://rubygems.org"
 
-gem 'bitters'
 gem 'bourbon'
 gem 'compass'
 gem 'cocoapods'
-gem 'facter'
 gem 'glynn'
 gem 'jekyll'
 gem 'neat'
