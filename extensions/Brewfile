@@ -1,4 +1,3 @@
-tap 'bramstein/fonttools'
 tap 'thoughtbot/formulae'
 tap 'homebrew/completions'
 tap 'caskroom/versions'
