@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
-curl -o- https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
 
-# nvm sources in the .bashrc by default. If .bash_profile
-# is available, this if sources it in the .bash_profile instead.
-# You still need to manually remove it from .bashrc though…
-if [[ -f ~/.bash_profile ]]; then
-  echo "export NVM_DIR='/Users/$(whoami)/.nvm'" >> ~/.bash_profile
-  echo "[ -s \"\$NVM_DIR/nvm.sh\" ] && . \"\$NVM_DIR/nvm.sh\"" >> ~/.bash_profile
+# Create .bash_profile if it doesn't exist
+if [[ ! -f ~/.bash_profile ]]; then
+  touch ~/.bash_profile
 fi
+
+# Directly source it to .bash_profile trought the pipe to bash
+curl -o- https://raw.githubusercontent.com/creationix/nvm/master/install.sh | PROFILE=~/.bash_profile bash
+
 
 # As long as the shell is not loaded `nvm` is unknown to the shell
 # The shell will restart after worker is finished.
