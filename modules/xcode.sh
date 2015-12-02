@@ -1,2 +1,7 @@
 #!/usr/bin/env bash
-xcode-select --install
+
+if which xcode-select >/dev/null; then
+  echo 'Xcode devtools already installed'
+else
+  xcode-select --install
+fi

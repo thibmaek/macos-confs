@@ -9,43 +9,43 @@
 
 # 1. Run OS X modifications.
 echo "Presetting OS X… ⌘"
-cd ./modules && ./osx.sh && cd ../
+cd modules && ./osx.sh && cd ../
 
 # 2. Install Command Line Tools.
 echo "Installing xcode-select… 🔨"
-cd ./modules && ./xcode.sh && cd ../
+cd modules && ./xcode.sh && cd ../
 
 # 3. Install homebrew.
 echo "Installing brew… 🍻"
-cd ./modules && ./brew.sh && cd ../
+cd modules && ./brew.sh && cd ../
 
 # 4. Install formulas and cask from Brewfile.
 echo "Reading from brewfile…"
-cd ./extensions && brew bundle && cd ../
+cd extensions && brew bundle && cd ../
 
 # 5. Install Node and NPM trough NVM.
 echo "Downloading and installing nvm…"
-cd ./modules && ./nvm.sh && cd ../
+cd modules && ./nvm.sh && cd ../
 
 # 6. Install global node modules.
 echo "Installing node modules…"
-cd ./extensions && ./npm && cd ../
+cd extensions && ./npm && cd ../
 
 # 7. Install Python versions for pyenv.
 echo "Installing pyenv versions 🐍"
-cd ./extensions && ./Python && cd ../
+cd extensions && ./Python && cd ../
 
 # 8. Use the .gemrc file for Rubygems
 echo "Presetting Ruby…"
-cd ./modules && ./ruby.sh && cd ../
+cd modules && ./ruby.sh && cd ../
 
 # 9. Install Rubygems.
 echo "Installing some gems 💎"
-cd ./extensions && bundle install && cd ../
+cd extensions && bundle install && cd ../
 
 # 10. Install APM packages & themes
 echo "Installing apm packages…"
-cd ./extensions && apm install --packages-file apm.txt && cd ../
+cd extensions && apm install --packages-file apm.txt && cd ../
 
 # Reload modified applications
 for app in "Activity Monitor" "Address Book" "Calendar" "Contacts" "cfprefsd" \
