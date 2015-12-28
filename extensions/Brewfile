@@ -26,6 +26,7 @@ brew 'ruby-completion'
 brew 'ssh-copy-id'
 brew 'terminal-notifier'
 brew 'tmux'
+brew 'trash'
 brew 'tree'
 brew 'vagrant-completion'
 brew 'wget', args: ['with-iri']
