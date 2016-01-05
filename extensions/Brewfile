@@ -10,7 +10,7 @@ brew 'ccat'
 brew 'coreutils'
 brew 'findutils'
 brew 'git-ftp'
-brew 'gitsh'
+brew 'git'
 brew 'grunt-completion'
 brew 'imagemagick', args: ['with-libtiff']
 brew 'mackup'
