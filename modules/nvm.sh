@@ -12,6 +12,6 @@ curl -o- https://raw.githubusercontent.com/creationix/nvm/master/install.sh | PR
 # As long as the shell is not loaded `nvm` is unknown to the shell
 # The shell will restart after worker is finished.
 # For now they are run directly from the shell script in the nvm directory.
-$NVM_DIR/nvm.sh install v5.4.0
-$NVM_DIR/nvm.sh install v4.2.4
-$NVM_DIR/nvm.sh alias default v4.2.4
+$NVM_DIR/nvm.sh install v5.5.0
+$NVM_DIR/nvm.sh install v4.2.6
+$NVM_DIR/nvm.sh alias default v4.2.6
