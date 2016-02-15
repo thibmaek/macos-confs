@@ -2,6 +2,7 @@
 
 modules=(
   babel-cli
+  babel-eslint
   bower
   eslint
   forever
@@ -10,8 +11,6 @@ modules=(
   node-gyp
   nodemon
   speed-test
-  tmi
-  uncss
   vtop
   webpack
   yo
