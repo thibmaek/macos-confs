@@ -16,7 +16,6 @@ merge-conflicts
 modular-snippets
 open-in-browser
 pigments
-todo-show
 travis-ci-status
 uglify
 
