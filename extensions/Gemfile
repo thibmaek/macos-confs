@@ -1,13 +1,9 @@
 # ~/Gemfile
 source "http://rubygems.org"
 
-gem 'bourbon'
-gem 'compass'
 gem 'cocoapods'
 gem 'glynn'
 gem 'jekyll'
-gem 'neat'
 gem 'sass'
 gem 'scss-lint'
-gem 'teamocil'
 gem 'terminal-notifier'
