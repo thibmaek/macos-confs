@@ -9,3 +9,5 @@ echo "eval \"$(rbenv init -)\"" >> ~/.bash_profile
 echo "if which rbenv > /dev/null; then eval \"$(rbenv init -)\"; fi" >> ~/.bash_profile
 
 echo "gem: --no-ri --no-rdoc --no-document" > ~/.gemrc
+
+gem install bundler
