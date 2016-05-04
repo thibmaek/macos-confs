@@ -1,15 +1,16 @@
 #!/usr/bin/env bash
 
 modules=(
-  babel-cli
+  babel
   babel-eslint
-  bower
   eslint
   forever
+  greenkeeper
   grunt-cli
   gulp
   node-gyp
   nodemon
+  npm
   speed-test
   vtop
   webpack
