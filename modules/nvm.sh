@@ -12,5 +12,9 @@ curl -o- https://raw.githubusercontent.com/creationix/nvm/master/install.sh | PR
 # As long as the shell is not loaded `nvm` is unknown to the shell
 # The shell will restart after worker is finished.
 # For now they are run directly from the shell script in the nvm directory.
-$NVM_DIR/nvm.sh install v6.0.0
-$NVM_DIR/nvm.sh alias default v6.0.0
+NVM_DIR="/Users/$(whoami)/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+
+# Should grab the latest version available to nvm
+LATEST=$(nvm ls-remote | tail -1 | grep -E -o '.{0,0}v.{0,6}' | tr -d '\n')
+nvm install $LATEST
