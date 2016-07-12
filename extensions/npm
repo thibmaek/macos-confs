@@ -8,12 +8,15 @@ modules=(
   greenkeeper
   grunt-cli
   gulp
+  mklicense
+  nativefier
   node-gyp
   nodemon
   npm
   speed-test
   vtop
   webpack
+  webpack-validator
   yo
 )
 
