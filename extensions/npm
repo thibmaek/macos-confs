@@ -5,7 +5,6 @@ modules=(
   babel-eslint
   eslint
   forever
-  greenkeeper
   grunt-cli
   gulp
   mklicense

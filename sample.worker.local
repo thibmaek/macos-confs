@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+# Install syntax highlighting for `nano`
+curl https://raw.githubusercontent.com/scopatz/nanorc/master/install.sh | sh
+
+# Set nano tabsize to 4 and prefer spaces
+cat <<EOF >> $HOME/.nanorc
+set tabsize 4
+set tabstospaces
+EOF

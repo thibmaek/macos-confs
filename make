@@ -47,6 +47,9 @@ cd extensions && bundle install && cd ../
 echo "Installing apm packages…"
 cd extensions && apm install --packages-file apm.txt && cd ../
 
+# 11. Perform additional local changes described in ~/.worker.local
+. "$HOME/.worker.local"
+
 # Reload modified applications
 for app in "Activity Monitor" "Address Book" "Calendar" "Contacts" "cfprefsd" \
 "Dock" "Finder" "Mail" "Messages" "Safari" "SystemUIServer" \
