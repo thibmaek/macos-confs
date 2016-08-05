@@ -8,6 +8,7 @@ modules=(
   grunt-cli
   gulp
   mklicense
+  mocha
   nativefier
   node-gyp
   nodemon
