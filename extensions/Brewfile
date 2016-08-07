@@ -1,7 +1,9 @@
 tap 'thoughtbot/formulae'
 tap 'homebrew/completions'
+tap 'homebrew/dupes'
+tap 'homebrew/versions'
+tap 'homebrew/homebrew-php'
 tap 'caskroom/versions'
-tap 'homebrew/php'
 
 brew 'apm-bash-completion'
 brew 'bash'
