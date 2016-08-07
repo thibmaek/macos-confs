@@ -1,12 +1,7 @@
 #!/usr/bin/env bash
 
 modules=(
-  babel
-  babel-eslint
   eslint
-  forever
-  grunt-cli
-  gulp
   mklicense
   mocha
   nativefier
@@ -14,7 +9,6 @@ modules=(
   nodemon
   npm
   speed-test
-  vtop
   webpack
   webpack-validator
   yo

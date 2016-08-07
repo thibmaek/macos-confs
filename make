@@ -7,9 +7,12 @@
 # out the lines below the echo's
 ################################
 
+# Make sure we can execute each file
+for MODULE in ./modules/*;do chmod +x $MODULE done
+
 # 1. Run OS X modifications.
-echo "Presetting OS X… ⌘"
-cd modules && ./osx.sh && cd ../
+echo "Presetting macOS… ⌘"
+cd modules && ./macos.sh && cd ../
 
 # 2. Install Command Line Tools.
 echo "Installing xcode-select… 🔨"
@@ -45,16 +48,16 @@ cd extensions && bundle install && cd ../
 
 # 10. Install APM packages & themes
 echo "Installing apm packages…"
-cd extensions && apm install --packages-file apm.txt && cd ../
+cd extensions && apm install --packages-file Atomfile && cd ../
 
 # 11. Perform additional local changes described in ~/.worker.local
 . "$HOME/.worker.local"
 
 # Reload modified applications
-for app in "Activity Monitor" "Address Book" "Calendar" "Contacts" "cfprefsd" \
+for APP in "Activity Monitor" "Address Book" "Calendar" "Contacts" "cfprefsd" \
 "Dock" "Finder" "Mail" "Messages" "Safari" "SystemUIServer" \
 "Transmission" "Twitter"; do
-	killall "${app}" > /dev/null 2>&1
+	killall "${APP}" > /dev/null 2>&1
 done
 
 echo "Done. Note that some of these changes require a logout/restart to take effect."

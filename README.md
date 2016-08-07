@@ -20,9 +20,9 @@ Ready to get started? Great.
 Just running it from the top is easy:
 
 ```shell
-git clone https://github.com/thibmaek/worker.git worker
+git clone https://github.com/thibmaek/worker.git
 cd worker
-sudo ./make #sudo not required (except for osx.sh)
+sudo ./make #sudo not required (except for macos.sh)
 ```
 
 `make` is the file that points your shell to each specific module.  
@@ -36,18 +36,14 @@ No problem forking this over to your own account, but don't bother sending a PR 
 
 #### Testing
 
-If I have to be really honest: I didn't test this on a new machine. It's just created out of the assumption that the code will work. I'm in progress of grabbing hold of a MacBook so I can test it, but currently this is released as beta code.
+Run tests locally by just executing them with bash from the test dir.
+It's advised to make sure they are executable with `chmod` first:
 
-There is a small test on Travis though which you can work on.  
-To start your test edit `test.sh` to:
+```bash
+export $TESTDIR=./tests
+for TEST in $(find $TESTDIR/ -name '*.test.sh'); do chmod +x $TEST done
 
-```shell
-# Test every script in the modules folder
-for file in $(find ./modules -name '*.sh'); do
-```
-
-and then run:
-
-```shell
-bash test.sh
+for FILE in $TESTDIR/*; do
+  bash $FILE
+done
 ```
