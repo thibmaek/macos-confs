@@ -1,4 +1,4 @@
-language: objective_c
+os: osx
 osx_image: xcode7.3
 env: TESTDIR=./tests
 
