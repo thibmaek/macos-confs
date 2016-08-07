@@ -1,5 +1,16 @@
-language: bash
-sudo: false
+osx_image: xcode7.3
+env: TESTDIR=./tests
+
+before_install:
+  - brew update
+  - brew tap Homebrew/bundle
+
+install:
+  - cd ./extensions && brew bundle
+
+before_script:
+  - for TEST in $(find $TESTDIR/ -name '*.test.sh'); do chmod +x $TEST done
 
 script:
-    - bash test.sh
+  - $TESTDIR/osx.test.sh
+  - $TESTDIR/nvm.test.sh

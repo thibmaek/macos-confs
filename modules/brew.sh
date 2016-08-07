@@ -6,7 +6,6 @@ if which xcode-select >/dev/null; then
   brew doctor
 else
   echo "Command line tools not installed!"
-  exit 0
 fi
 
 # 2. Tap boneyard for Brewfile support
@@ -14,5 +13,4 @@ if which brew >/dev/null; then
   brew tap Homebrew/bundle
 else
   echo "brew not installed/found!"
-  exit 0
 fi
