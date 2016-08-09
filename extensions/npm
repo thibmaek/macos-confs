@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 modules=(
+  commitizen
   eslint
   mklicense
   mocha
@@ -16,6 +17,7 @@ modules=(
 
 generators=(
   generator-devine-project
+  generator-eslint-config
   generator-generator
 )
 

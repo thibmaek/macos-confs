@@ -29,7 +29,6 @@ brew 'trash'
 brew 'tree'
 brew 'vagrant-completion'
 brew 'wget', args: ['with-iri']
-brew 'sfnt2woff-zopfli'
 
 # ================================= #
 
