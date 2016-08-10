@@ -38,7 +38,7 @@ cask 'colorpicker-skalacolor'
 # Temporarily commented out since this makes CI fail
 # Looking to fix this
 #cask 'cuda'
-cask 'dockertoolbox'
+cask 'docker-toolbox'
 cask 'dropbox'
 cask 'etcher'
 cask 'fontprep'
