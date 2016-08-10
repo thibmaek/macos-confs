@@ -35,7 +35,9 @@ brew 'wget', args: ['with-iri']
 cask 'atom'
 cask 'coconutbattery'
 cask 'colorpicker-skalacolor'
-cask 'cuda'
+# Temporarily commented out since this makes CI fail
+# Looking to fix this
+#cask 'cuda'
 cask 'dockertoolbox'
 cask 'dropbox'
 cask 'etcher'
