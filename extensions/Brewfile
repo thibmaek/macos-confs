@@ -1,7 +1,8 @@
-tap 'thoughtbot/formulae'
+tap 'homebrew/aliases'
 tap 'homebrew/completions'
 tap 'homebrew/dupes'
 tap 'caskroom/versions'
+tap 'thoughtbot/formulae'
 
 brew 'apm-bash-completion'
 brew 'bash'
