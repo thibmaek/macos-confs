@@ -36,9 +36,6 @@ brew 'wget', args: ['with-iri']
 cask 'atom'
 cask 'coconutbattery'
 cask 'colorpicker-skalacolor'
-# Temporarily commented out since this makes CI fail
-# Looking to fix this
-#cask 'cuda'
 cask 'docker-toolbox'
 cask 'dropbox'
 cask 'etcher'
@@ -51,7 +48,6 @@ cask 'imageoptim'
 cask 'keepingyouawake'
 cask 'messenger'
 cask 'numi'
-cask 'otto'
 cask 'postman'
 cask 'qlcolorcode'
 cask 'qlimagesize'
