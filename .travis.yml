@@ -13,5 +13,5 @@ before_script:
   - for TEST in $(find $TESTDIR/ -name '*.test.sh'); do chmod +x $TEST; done
 
 script:
-  - $TESTDIR/osx.test.sh
-  - $TESTDIR/nvm.test.sh
+  - bash $TESTDIR/osx.test.sh
+  - bash $TESTDIR/nvm.test.sh
