@@ -1,6 +1,5 @@
 os: osx
 osx_image: xcode7.3
-env: TESTDIR=./tests
 
 before_install:
   - brew update
@@ -10,8 +9,8 @@ install:
   - cd ./extensions && brew bundle
 
 before_script:
-  - for TEST in $(find $TESTDIR/ -name '*.test.sh'); do chmod +x $TEST; done
+  - for TEST in tests/*; do chmod +x $TEST; done
 
 script:
-  - bash $TESTDIR/osx.test.sh
-  - bash $TESTDIR/nvm.test.sh
+  - bash tests/osx.test.sh
+  - bash tests/nvm.test.sh
