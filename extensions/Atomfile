@@ -3,6 +3,7 @@ atom-mac-terminal
 atom-wrap-in-tag
 autocomplete-paths
 color-picker
+docblockr
 editor-stats
 editorconfig
 expose
