@@ -17,6 +17,7 @@ merge-conflicts
 modular-snippets
 open-in-browser
 pigments
+regex-railroad-diagram
 uglify
 
 Sass-Syntax-Highlight
@@ -30,6 +31,7 @@ linter-jsxhint
 linter-php
 linter-scss-lint
 react
+qolor
 
 atom-toychest
 base16-ocean-dark-spacegray
