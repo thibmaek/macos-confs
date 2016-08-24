@@ -9,7 +9,7 @@ install:
   - cd ./extensions && brew bundle
 
 before_script:
-  - for TEST in tests/*; do chmod +x $TEST; done
+  - for TEST in $PWD/*; do chmod +x $TEST; done
 
 script:
   - bash tests/osx.test.sh
