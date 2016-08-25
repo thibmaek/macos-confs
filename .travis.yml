@@ -9,8 +9,8 @@ install:
   - cd ./extensions && brew bundle
 
 before_script:
-  - for TEST in $PWD/*; do chmod +x $TEST; done
+  - for TEST in $PWD/tests/*; do chmod +x $TEST; done
 
 script:
-  - bash tests/osx.test.sh
-  - bash tests/nvm.test.sh
+  - bash $PWD/tests/osx.test.sh
+  - bash $PWD/tests/nvm.test.sh
