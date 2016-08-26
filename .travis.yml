@@ -6,7 +6,7 @@ before_install:
   - brew tap Homebrew/bundle
 
 install:
-  - cd ./extensions && brew bundle $$ cd ../
+  - cd ./extensions && brew bundle && cd ../
 
 before_script:
   - for TEST in $PWD/tests/*; do chmod +x $TEST; done
