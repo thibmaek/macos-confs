@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-local NPMTEST=../extensions/npm
+export NPMTEST="../extensions/npm"
 
 curl -o- https://raw.githubusercontent.com/creationix/nvm/master/install.sh | PROFILE=$HOME/.bash_profile bash
 export NVM_DIR="$HOME/.nvm"
