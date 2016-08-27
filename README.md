@@ -1,12 +1,12 @@
-# Welcome to worker!
+# Welcome to worker! [![Build Status](https://travis-ci.org/thibmaek/worker.svg?branch=master)](https://travis-ci.org/thibmaek/worker)
 
-> Getting your OS X machine up and running!
+> Getting your macOS machine up and running!
 
-Worker is a personal project to quickly get new or clean installed OS X machines
+Worker is a personal project to quickly get new or clean installed macOS machines
 up and running with everything I need for my development workflow.
 
 It currently presets all of the following:
-* [OS X sensible defaults](https://github.com/mathiasbynens/dotfiles)
+* [macOS sensible defaults](https://github.com/mathiasbynens/dotfiles/blob/master/.macos)
 * [Brew](https://github.com/Homebrew/homebrew) (with casks)
 * Node (trough [nvm](https://github.com/creationix/nvm))
 * Ruby (trough [rbenv](https://github.com/rbenv/rbenv))
@@ -22,7 +22,7 @@ Just running it from the top is easy:
 ```shell
 git clone https://github.com/thibmaek/worker.git
 cd worker
-sudo ./make #sudo not required (except for macos.sh)
+sudo ./make # sudo not required (except for macos.sh)
 ```
 
 `make` is the file that points your shell to each specific module.  
@@ -40,10 +40,8 @@ Run tests locally by just executing them with bash from the test dir.
 It's advised to make sure they are executable with `chmod` first:
 
 ```bash
-export $TESTDIR=./tests
-for TEST in $(find $TESTDIR/ -name '*.test.sh'); do chmod +x $TEST done
+for TEST in $PWD/tests/*; do chmod +x $TEST; done
 
-for FILE in $TESTDIR/*; do
-  bash $FILE
-done
+bash "$PWD/tests/osx.test.sh"
+bash "$PWD/tests/nvm.test.sh"
 ```

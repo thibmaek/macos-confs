@@ -1,14 +1,12 @@
 os: osx
 osx_image: xcode7.3
 
-# temp-disable
-# before_install:
-#   - brew update
-#   - brew tap Homebrew/bundle
+before_install:
+  - brew update
+  - brew tap Homebrew/bundle
 
-# temp-disable
-# install:
-#   - cd ./extensions && brew bundle && cd ../
+install:
+  - cd $ROOT/extensions && brew bundle && cd $ROOT
 
 before_script:
   - for TEST in $ROOT/tests/*; do chmod +x $TEST; done
