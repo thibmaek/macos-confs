@@ -12,11 +12,9 @@ export NVM_DIR="$HOME/.nvm"
 if [[ ! -f $HOME/.bash_profile && ! -d $HOME/.nvm/ ]]; then
   fancy_echo "$FAIL No .bash_profile and .nvm directory found"
   exit 1
-elif
-  !which npm >/dev/null; then
-    fancy_echo "$FAIL npm not found in the shell. Set it in PATH."
-    exit 1
-  fi
-
-  bash "$ROOT/extensions/npm"
+elif ! which npm >/dev/null; then
+  fancy_echo "$FAIL npm not found in the shell. Set it in PATH."
+  exit 1
 fi
+
+bash "$ROOT/extensions/npm"
