@@ -1,7 +1,12 @@
 #!/usr/bin/env bash
 
+fancy_echo() {
+  local fmt="$1"; shift
+  printf "\n$fmt\n" "$@ \e[0m"
+}
+
 if which xcode-select >/dev/null; then
-  echo 'Xcode devtools already installed'
+  fancy_echo "$PASS Xcode devtools already installed!"
 else
-  echo '[N/A:] Run `xcode-select --install`' && exit 1
+  fancy_echo "$FAIL [N/A:] Run xcode-select --install" && exit 1
 fi

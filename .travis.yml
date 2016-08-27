@@ -1,16 +1,23 @@
 os: osx
 osx_image: xcode7.3
 
-before_install:
-  - brew update
-  - brew tap Homebrew/bundle
+env:
+  - ROOT=$PWD
+  - PASS="\e[32m ✓"
+  - FAIL="\e[31m ✗"
 
-install:
-  - cd ./extensions && brew bundle && cd ../
+# temp-disable
+# before_install:
+#   - brew update
+#   - brew tap Homebrew/bundle
+
+# temp-disable
+# install:
+#   - cd ./extensions && brew bundle && cd ../
 
 before_script:
-  - for TEST in $PWD/tests/*; do chmod +x $TEST; done
+  - for TEST in $ROOT/tests/*; do chmod +x $TEST; done
 
 script:
-  - bash $PWD/tests/osx.test.sh
-  - bash $PWD/tests/nvm.test.sh
+  - bash $ROOT/tests/osx.test.sh
+  - bash $ROOT/tests/nvm.test.sh

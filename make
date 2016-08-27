@@ -36,7 +36,10 @@ cd extensions && ./npm && cd ../
 
 # 7. Install Python versions for pyenv.
 echo "Installing pyenv versions 🐍"
-cd extensions && ./Python && cd ../
+cd modules && ./python.sh && cd ../
+
+echo "Installing modules from pip"
+cd extensions ./pip && cd ../
 
 # 8. Use the .gemrc file for Rubygems
 echo "Presetting Ruby…"
