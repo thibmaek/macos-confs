@@ -1,4 +1,3 @@
 #!/usr/bin/env bash
 
-pip install glances
-pip install bottle
+pip install bottle glances
