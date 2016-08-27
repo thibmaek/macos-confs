@@ -1,11 +1,6 @@
 os: osx
 osx_image: xcode7.3
 
-env:
-  - ROOT=$PWD
-  - PASS="\e[32m ✓"
-  - FAIL="\e[31m ✗"
-
 # temp-disable
 # before_install:
 #   - brew update
