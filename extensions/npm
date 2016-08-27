@@ -7,18 +7,15 @@ modules=(
   mocha
   nativefier
   node-gyp
-  nodemon
   npm
   speed-test
   webpack
-  webpack-validator
   yo
 )
 
 generators=(
   generator-devine-project
   generator-eslint-config
-  generator-generator
 )
 
 npm install -g ${modules[@]}
