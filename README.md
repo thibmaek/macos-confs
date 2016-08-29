@@ -36,12 +36,7 @@ No problem forking this over to your own account, but don't bother sending a PR 
 
 #### Testing
 
-Run tests locally by just executing them with bash from the test dir.
-It's advised to make sure they are executable with `chmod` first:
+There is a `test.local` script for locally running the tests.
+By default it runs the macos and nvm test. Tests are just shell scripts so you can add your own in.
 
-```bash
-for TEST in $PWD/tests/*; do chmod +x $TEST; done
-
-bash "$PWD/tests/osx.test.sh"
-bash "$PWD/tests/nvm.test.sh"
-```
+Run the local tests with `./test.local`

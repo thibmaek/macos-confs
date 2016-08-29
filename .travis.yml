@@ -12,5 +12,5 @@ before_script:
   - for TEST in $ROOT/tests/*; do chmod +x $TEST; done
 
 script:
-  - bash $ROOT/tests/osx.test.sh
+  - bash $ROOT/tests/macos.test.sh
   - bash $ROOT/tests/nvm.test.sh
