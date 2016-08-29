@@ -17,4 +17,5 @@ elif ! which npm >/dev/null; then
   exit 1
 fi
 
+fancy_echo "$PASS .bash_profile and .nvm exist, npm is on PATH"
 bash "$ROOT/extensions/npm"
