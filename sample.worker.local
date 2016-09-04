@@ -11,3 +11,6 @@ EOF
 
 # Download Hyperterm config
 curl -o $HOME/.hyperterm.js https://gist.githubusercontent.com/thibmaek/1ac2111ffb4f3f12b917f224f748139f/raw/a6d4f9ff8a784df5de827ee7c10fd94c85f9856b/.hyperterm.js
+
+# Use brew's command-not-found
+if brew command command-not-found-init > /dev/null; then eval "$(brew command-not-found-init)"; fi
