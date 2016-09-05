@@ -21,7 +21,6 @@ regex-railroad-diagram
 uglify
 
 Sass-Syntax-Highlight
-express-complete
 jsonlint
 language-babel
 language-docker

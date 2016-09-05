@@ -7,54 +7,57 @@
 # out the lines below the echo's
 ################################
 
+# Export env ROOT to current directory run test from absolute path
+ROOT=$PWD
+
 # Make sure we can execute each file
-for MODULE in ./modules/*;do chmod +x $MODULE done
+for MODULE in $ROOT/modules/*; do chmod +x $MODULE; done
 
 # 1. Run OS X modifications.
-echo "Presetting macOS… ⌘"
-cd modules && ./macos.sh && cd ../
+echo "Presetting macOS..."
+. "$ROOT/modules/macos.sh"
 
 # 2. Install Command Line Tools.
-echo "Installing xcode-select… 🔨"
-cd modules && ./xcode.sh && cd ../
+echo "Installing xcode-select..."
+. "$ROOT/modules/xcode.sh"
 
 # 3. Install homebrew.
-echo "Installing brew… 🍻"
-cd modules && ./brew.sh && cd ../
+echo "Installing brew..."
+. "$ROOT/modules/brew.sh"
 
 # 4. Install formulas and cask from Brewfile.
-echo "Reading from brewfile…"
-cd extensions && brew bundle && cd ../
+echo "Reading from brewfile..."
+brew bundle --file="$ROOT/extensions/Brewfile"
 
 # 5. Install Node and NPM trough NVM.
-echo "Downloading and installing nvm…"
-cd modules && ./nvm.sh && cd ../
+echo "Downloading and installing nvm..."
+. "$ROOT/modules/nvm.sh"
 
 # 6. Install global node modules.
-echo "Installing node modules…"
-cd extensions && ./npm && cd ../
+echo "Installing node modules..."
+. "$ROOT/extensions/npm"
 
 # 7. Install Python versions for pyenv.
-echo "Installing pyenv versions 🐍"
-cd modules && ./python.sh && cd ../
+echo "Installing pyenv versions..."
+. "$ROOT/modules/python.sh"
 
-echo "Installing modules from pip"
-cd extensions ./pip && cd ../
+echo "Installing modules from pip..."
+. "$ROOT/extensions/pip"
 
 # 8. Use the .gemrc file for Rubygems
-echo "Presetting Ruby…"
-cd modules && ./ruby.sh && cd ../
+echo "Presetting Ruby..."
+. "$ROOT/modules/Ruby.sh"
 
 # 9. Install Rubygems.
-echo "Installing some gems 💎"
-cd extensions && bundle install && cd ../
+echo "Installing some gems..."
+. "$ROOT/extensions/ruby.sh"
 
 # 10. Install APM packages & themes
-echo "Installing apm packages…"
-cd extensions && apm install --packages-file Atomfile && cd ../
+echo "Installing apm packages..."
+apm install --packages-file "$ROOT/extensions/Atomfile"
 
 # 11. Perform additional local changes described in ~/.worker.local
-. "$HOME/.worker.local"
+. "$ROOT/worker.local"
 
 # Reload modified applications
 for APP in "Activity Monitor" "Address Book" "Calendar" "Contacts" "cfprefsd" \
@@ -64,5 +67,5 @@ for APP in "Activity Monitor" "Address Book" "Calendar" "Contacts" "cfprefsd" \
 done
 
 echo "Done. Note that some of these changes require a logout/restart to take effect."
-echo "Now reloading shell…"
+echo "Now reloading shell..."
 exec $SHELL -l
