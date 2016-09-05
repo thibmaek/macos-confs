@@ -27,7 +27,7 @@ echo "Installing brew..."
 
 # 4. Install formulas and cask from Brewfile.
 echo "Reading from brewfile..."
-brew bundle "$ROOT/extensions/Brewfile"
+brew bundle --file="$ROOT/extensions/Brewfile"
 
 # 5. Install Node and NPM trough NVM.
 echo "Downloading and installing nvm..."
