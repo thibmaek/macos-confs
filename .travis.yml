@@ -6,7 +6,7 @@ before_install:
   - brew tap Homebrew/bundle
 
 install:
-  - brew bundle "$ROOT/extensions/Brewfile"
+  - brew bundle --file="$ROOT/extensions/Brewfile"
 
 before_script:
   - for TEST in $ROOT/tests/*; do chmod +x $TEST; done
