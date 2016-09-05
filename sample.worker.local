@@ -14,3 +14,8 @@ curl -o $HOME/.hyperterm.js https://gist.githubusercontent.com/thibmaek/1ac2111f
 
 # Use brew's command-not-found
 if brew command command-not-found-init > /dev/null; then eval "$(brew command-not-found-init)"; fi
+
+# Download powerline-shell
+git clone https://github.com/banga/powerline-shell $HOME/.powerline-shell
+wget https://gist.githubusercontent.com/thibmaek/5f4a1a3c9af2aa677135b103f8f9db74/raw/e766ae6518a6265e54ef1310aa5511a4cc788569/config.py -P $HOME/.powerline-shell/
+. $HOME/.powerline-shell/install.py
