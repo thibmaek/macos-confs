@@ -3,7 +3,6 @@ tap 'homebrew/completions'
 tap 'homebrew/dupes'
 tap 'homebrew/command-not-found'
 tap 'caskroom/versions'
-tap 'thoughtbot/formulae'
 
 brew 'apm-bash-completion'
 brew 'bash'
@@ -13,7 +12,7 @@ brew 'coreutils'
 brew 'findutils'
 brew 'git'
 brew 'grep'
-brew 'imagemagick', args: ['with-libtiff']
+brew 'imagemagick', args: ['with-libtiff', 'with-webp']
 brew 'mackup'
 brew 'mongodb'
 brew 'nano'
