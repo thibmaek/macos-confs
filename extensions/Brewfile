@@ -15,6 +15,7 @@ brew 'git'
 brew 'grep'
 brew 'imagemagick', args: ['with-libtiff', 'with-webp']
 brew 'mackup'
+brew 'mas'
 brew 'mongodb'
 brew 'nano'
 brew 'nmap'
