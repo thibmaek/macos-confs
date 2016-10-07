@@ -35,7 +35,6 @@ brew 'wget', args: ['with-iri']
 # ================================= #
 
 cask 'atom'
-cask 'coconutbattery'
 cask 'colorpicker-skalacolor'
 cask 'docker'
 cask 'dropbox'
@@ -44,7 +43,7 @@ cask 'fontprep'
 cask 'github-desktop'
 cask 'google-chrome'
 cask 'google-chrome-canary'
-cask 'hyperterm'
+cask 'hyper'
 cask 'imageoptim'
 cask 'keepingyouawake'
 cask 'messenger'

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 #####################################################
-# To start worker, run this file (preferably as root)
+# To start worker, run this file
 #
 # You can turn off modules & extensions by commenting
 # out the lines below the echo's
@@ -13,51 +13,47 @@ ROOT=$PWD
 # Make sure we can execute each file
 for MODULE in $ROOT/modules/*; do chmod +x $MODULE; done
 
-# 1. Run OS X modifications.
-echo "Presetting macOS..."
-. "$ROOT/modules/macos.sh"
-
-# 2. Install Command Line Tools.
+# 1. Install Command Line Tools.
 echo "Installing xcode-select..."
-. "$ROOT/modules/xcode.sh"
+bash "$ROOT/modules/xcode.sh"
 
-# 3. Install homebrew.
+# 2. Install homebrew.
 echo "Installing brew..."
-. "$ROOT/modules/brew.sh"
+bash "$ROOT/modules/brew.sh"
 
-# 4. Install formulas and cask from Brewfile.
+# 3. Install formulas and cask from Brewfile.
 echo "Reading from brewfile..."
 brew bundle --file="$ROOT/extensions/Brewfile"
 
-# 5. Install Node and NPM trough NVM.
+# 4. Install Node and NPM trough NVM.
 echo "Downloading and installing nvm..."
-. "$ROOT/modules/nvm.sh"
+bash "$ROOT/modules/nvm.sh"
 
-# 6. Install global node modules.
+# 5. Install global node modules.
 echo "Installing node modules..."
-. "$ROOT/extensions/npm"
+bash "$ROOT/extensions/npm"
 
-# 7. Install Python versions for pyenv.
+# 6. Install Python versions for pyenv.
 echo "Installing pyenv versions..."
-. "$ROOT/modules/python.sh"
+bash "$ROOT/modules/python.sh"
 
 echo "Installing modules from pip..."
-. "$ROOT/extensions/pip"
+bash "$ROOT/extensions/pip"
 
-# 8. Use the .gemrc file for Rubygems
+# 7. Use the .gemrc file for Rubygems
 echo "Presetting Ruby..."
-. "$ROOT/modules/Ruby.sh"
+bash "$ROOT/modules/ruby.sh"
 
-# 9. Install Rubygems.
+# 8. Install Rubygems.
 echo "Installing some gems..."
-. "$ROOT/extensions/ruby.sh"
+bash "$ROOT/extensions/ruby.sh"
 
-# 10. Install APM packages & themes
+# 9. Install APM packages & themes
 echo "Installing apm packages..."
 apm install --packages-file "$ROOT/extensions/Atomfile"
 
-# 11. Perform additional local changes described in ~/.worker.local
-. "$ROOT/worker.local"
+# 10. Perform additional local changes described in ./worker.local
+if [[ -f "$ROOT/worker.local" ]]; then bash "$ROOT/worker.local"; fi
 
 # Reload modified applications
 for APP in "Activity Monitor" "Address Book" "Calendar" "Contacts" "cfprefsd" \

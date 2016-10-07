@@ -5,12 +5,12 @@ if which xcode-select >/dev/null; then
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
   brew doctor
 else
-  echo "Command line tools not installed!"
+  echo "Command line tools not installed!" && exit 1
 fi
 
 # 2. Tap boneyard for Brewfile support
-if which brew >/dev/null; then
+if which brew > /dev/null; then
   brew tap Homebrew/bundle
 else
-  echo "brew not installed/found!"
+  echo "brew not installed/found!" && exit 1
 fi
