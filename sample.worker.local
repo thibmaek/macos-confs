@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Install syntax highlighting for `nano`
-curl https://raw.githubusercontent.com/scopatz/nanorc/master/install.sh | sh
+wget https://raw.githubusercontent.com/scopatz/nanorc/master/install.sh | sh
 
 # Set nano tabsize to 4 and prefer spaces
 cat <<EOF >> $HOME/.nanorc
@@ -9,16 +9,10 @@ set tabsize 2
 set tabstospaces
 EOF
 
-# Download Hyperterm config
-curl -o $HOME/.hyperterm.js https://gist.githubusercontent.com/thibmaek/1ac2111ffb4f3f12b917f224f748139f/raw/a6d4f9ff8a784df5de827ee7c10fd94c85f9856b/.hyperterm.js
-
-# Use brew's command-not-found
-if brew command command-not-found-init > /dev/null; then eval "$(brew command-not-found-init)"; fi
-
 # Download powerline-shell
 git clone https://github.com/banga/powerline-shell $HOME/.powerline-shell
 wget https://gist.githubusercontent.com/thibmaek/5f4a1a3c9af2aa677135b103f8f9db74/raw/e766ae6518a6265e54ef1310aa5511a4cc788569/config.py -P $HOME/.powerline-shell/
-. "$HOME/.powerline-shell/install.py"
+"$HOME/.powerline-shell/install.py"
 
 # Switch to using brew-installed bash as default shell
 if ! fgrep -q '/usr/local/bin/bash' /etc/shells; then

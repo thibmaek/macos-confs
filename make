@@ -56,8 +56,8 @@ echo "Installing some gems..."
 echo "Installing apm packages..."
 apm install --packages-file "$ROOT/extensions/Atomfile"
 
-# 11. Perform additional local changes described in ~/.worker.local
-. "$ROOT/worker.local"
+# 11. Perform additional local changes described in ./worker.local
+if [[ -f "$ROOT/worker.local" ]]; then bash "$ROOT/worker.local"; fi
 
 # Reload modified applications
 for APP in "Activity Monitor" "Address Book" "Calendar" "Contacts" "cfprefsd" \
