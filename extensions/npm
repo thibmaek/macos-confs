@@ -4,12 +4,9 @@ modules=(
   commitizen
   eslint
   mklicense
-  mocha
   nativefier
-  node-gyp
   npm
   speed-test
-  webpack
   yo
 )
 
