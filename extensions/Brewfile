@@ -10,6 +10,7 @@ brew 'bash-completion'
 brew 'ccat'
 brew 'coreutils'
 brew 'docker-completion'
+brew 'ffmpeg', args: ['with-faac']
 brew 'findutils'
 brew 'git'
 brew 'grep'
