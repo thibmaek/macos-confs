@@ -29,9 +29,9 @@ brew bundle --file="$ROOT/extensions/Brewfile"
 echo "Downloading and installing nvm..."
 bash "$ROOT/modules/nvm.sh"
 
-# 5. Install global node modules.
-echo "Installing node modules..."
-bash "$ROOT/extensions/npm"
+# 5. Installing yarn and global packages
+echo "Installing yarn..."
+bash "$ROOT/extensions/yarn"
 
 # 6. Install Python versions for pyenv.
 echo "Installing pyenv versions..."
