@@ -14,8 +14,8 @@ ROOT=$PWD
 for MODULE in $ROOT/modules/*; do chmod +x $MODULE; done
 
 # 1. Install Command Line Tools.
-echo "Installing xcode-select..."
-bash "$ROOT/modules/xcode.sh"
+echo "Updating xcode-select..."
+xcode-select --install;
 
 # 2. Install homebrew.
 echo "Installing brew..."
@@ -46,7 +46,7 @@ bash "$ROOT/modules/ruby.sh"
 
 # 8. Install Rubygems.
 echo "Installing some gems..."
-bash "$ROOT/extensions/ruby.sh"
+bundle install --gemfile="$ROOT/extensions/Gemfile"
 
 # 9. Install APM packages & themes
 echo "Installing apm packages..."
