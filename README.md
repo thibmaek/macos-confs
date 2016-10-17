@@ -7,7 +7,7 @@ up and running with everything I need for my development workflow.
 It currently presets all of the following:
 * [macOS sensible defaults](https://github.com/mathiasbynens/dotfiles/blob/master/.macos)
 * [Brew](https://github.com/Homebrew/homebrew) (with casks)
-* Node (trough [nvm](https://github.com/creationix/nvm))
+* Node (trough [nvm](https://github.com/creationix/nvm)) (with global packages trough yarn)
 * Ruby (trough [rbenv](https://github.com/rbenv/rbenv))
 * Python (trough [pyenv](https://github.com/yyuu/pyenv))
 * [Atom](https://github.com/atom/atom) (with apm packages & themes)
@@ -32,6 +32,6 @@ No problem forking this over to your own account, but don't bother sending a PR 
 
 #### Testing
 There is a `test.local` script for locally running the tests.
-By default it runs the macos and nvm test. Tests are just shell scripts so you can add your own in.
+Tests are just shell scripts so you can add your own in.
 
 Run the local tests with `./test.local`
