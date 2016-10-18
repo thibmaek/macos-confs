@@ -8,8 +8,5 @@ for TEST in $ROOT/tests/*; do chmod +x $TEST; done
 
 ##################################################################################
 
-# Run the macos test
-bash "$ROOT/tests/macos.test.sh"
-
 # Run the nvm(& npm) test
 bash "$ROOT/tests/nvm.test.sh"

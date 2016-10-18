@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+# Install yarn from the official install script
+curl -o- -L https://yarnpkg.com/install.sh | bash
+
+# Globally add this packages array
+packages=(
+  commitizen
+  eslint
+  mklicense
+  node-gyp
+  speed-test
+  yo
+)
+
+yarn global add ${packages[@]}

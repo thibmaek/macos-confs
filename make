@@ -14,8 +14,8 @@ ROOT=$PWD
 for MODULE in $ROOT/modules/*; do chmod +x $MODULE; done
 
 # 1. Install Command Line Tools.
-echo "Installing xcode-select..."
-bash "$ROOT/modules/xcode.sh"
+echo "Updating xcode-select..."
+xcode-select --install;
 
 # 2. Install homebrew.
 echo "Installing brew..."
@@ -29,9 +29,9 @@ brew bundle --file="$ROOT/extensions/Brewfile"
 echo "Downloading and installing nvm..."
 bash "$ROOT/modules/nvm.sh"
 
-# 5. Install global node modules.
-echo "Installing node modules..."
-bash "$ROOT/extensions/npm"
+# 5. Installing yarn and global packages
+echo "Installing yarn..."
+bash "$ROOT/extensions/yarn"
 
 # 6. Install Python versions for pyenv.
 echo "Installing pyenv versions..."
@@ -46,7 +46,7 @@ bash "$ROOT/modules/ruby.sh"
 
 # 8. Install Rubygems.
 echo "Installing some gems..."
-bash "$ROOT/extensions/ruby.sh"
+bundle install --gemfile="$ROOT/extensions/Gemfile"
 
 # 9. Install APM packages & themes
 echo "Installing apm packages..."

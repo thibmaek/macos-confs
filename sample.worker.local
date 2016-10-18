@@ -14,6 +14,10 @@ git clone https://github.com/banga/powerline-shell $HOME/.powerline-shell
 wget https://gist.githubusercontent.com/thibmaek/5f4a1a3c9af2aa677135b103f8f9db74/raw/e766ae6518a6265e54ef1310aa5511a4cc788569/config.py -P $HOME/.powerline-shell/
 "$HOME/.powerline-shell/install.py"
 
+# Download powerline-fonts
+git clone https://github.com/powerline/fonts $HOME/powerline-fonts && $HOME/powerline-fonts/install.sh
+rm -rf $HOME/powerline-fonts
+
 # Switch to using brew-installed bash as default shell
 if ! fgrep -q '/usr/local/bin/bash' /etc/shells; then
   echo '/usr/local/bin/bash' | sudo tee -a /etc/shells;
