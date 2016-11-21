@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+# Globally add this packages array
+packages=(
+  commitizen
+  generator-module-boilerplate
+  mklicense
+  node-gyp
+  speed-test
+  yarn
+  yo
+)
+
+npm install -g ${packages[@]}
