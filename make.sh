@@ -1,16 +1,12 @@
 #!/usr/bin/env bash
 
-#####################################################
-# To start worker, run this file
-#
-# You can turn off modules & extensions by commenting
-# out the lines below the echo's
-################################
+# ***
+# This file will start all tasks.
+# Comment out anything you dont want installed.
+# ***
 
-# Export env ROOT to current directory run test from absolute path
+# Set this env to current dir, make everything executable
 ROOT=$PWD
-
-# Make sure we can execute each file
 for MODULE in $ROOT/modules/*; do chmod +x $MODULE; done
 
 # 1. Install Command Line Tools.
