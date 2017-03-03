@@ -1,67 +1,69 @@
-tap 'homebrew/aliases'
-tap 'homebrew/completions'
-tap 'homebrew/dupes'
-tap 'homebrew/command-not-found'
-tap 'caskroom/versions'
+# — Taps —
+tap 'homebrew/aliases' # github.com/Homebrew/homebrew-aliases
+tap 'homebrew/dupes' # github.com/Homebrew/homebrew-dupes
+tap 'homebrew/command-not-found' # github.com/Homebrew/homebrew-command-not-found
 
-brew 'apm-bash-completion'
-brew 'bash'
-brew 'bash-completion'
-brew 'ccat'
-brew 'coreutils'
-brew 'docker-completion'
-brew 'ffmpeg', args: ['with-faac']
-brew 'findutils'
-brew 'git'
-brew 'grep'
-brew 'imagemagick', args: ['with-libtiff', 'with-webp']
-brew 'mackup'
-brew 'mas'
-brew 'mongodb'
-brew 'nano'
-brew 'nmap'
-brew 'openssl'
-brew 'pyenv'
-brew 'rbenv'
-brew 'ruby-build'
-brew 'ruby-completion'
-brew 'screen'
-brew 'ssh-copy-id'
-brew 'tmux'
-brew 'trash'
-brew 'tree'
-brew 'vagrant-completion'
-brew 'wget', args: ['with-iri']
+# — Formulae —
+brew 'apm-bash-completion' # github.com/vigo/apm-bash-completion
+brew 'bash' # gnu.org/software/bash
+brew 'bash-completion' # github.com/scop/bash-completion
+brew 'ccat' # github.com/jingweno/ccat
+brew 'coreutils', args: ['with-default-names'] # gnu.org/software/coreutils/coreutils
+brew 'docker-completion' # github.com/docker/docker
+brew 'ffmpeg', args: ['with-faac'] # ffmpeg.org
+brew 'findutils', args: ['with-default-names'] # gnu.org/software/findutils
+brew 'git' # git-scm.org
+brew 'gpg' # gnupg.org
+brew 'grep', args: ['with-default-names'] # gnu.org/software/grep
+brew 'imagemagick', args: ['with-libtiff', 'with-webp'] # imagemagick.org/script/index.php
+brew 'mackup' # github.com/lra/mackup
+brew 'mas' # github.com/mas-cli/mas
+brew 'nano' # nano-editor.org
+brew 'nmap' # nmap.org
+brew 'openssl' # openssl.org
+brew 'pyenv' # github.com/yyuu/pyenv
+brew 'rbenv' # github.com/rbenv/rbenv
+brew 'ruby-build' # github.com/rbenv/ruby-build
+brew 'ruby-completion' # github.com/mernen/completion-ruby
+brew 'screen' # gnu.org/software/screen
+brew 'ssh-copy-id' # openssh.com
+brew 'trash' # hasseg.org/trash
+brew 'tree' # mama.indstate.edu/users/ice/tree
+brew 'wget', args: ['with-iri'] # gnu.org/software/wget
 
-# ================================= #
-
-cask 'atom'
-cask 'betterzip'
-cask 'colorpicker-skalacolor'
-cask 'docker'
-cask 'dropbox'
-cask 'etcher'
-cask 'github-desktop'
-cask 'google-chrome'
-cask 'google-chrome-canary'
-cask 'hyper'
-cask 'imageoptim'
-cask 'insomnia'
-cask 'keepingyouawake'
-cask 'messenger'
-cask 'numi'
-cask 'qlcolorcode'
-cask 'qlimagesize'
-cask 'qlmarkdown'
-cask 'qlstephen'
-cask 'quicklook-csv'
-cask 'quicklook-json'
-cask 'sequel-pro'
-cask 'sketch-toolbox'
-cask 'slack'
-cask 'spectacle'
-cask 'spotify'
-cask 'suspicious-package'
-cask 'transmission'
-cask 'virtualbox'
-cask 'vlc'
+# — Casks —
+cask 'atom' # atom.io
+cask 'betterzip' # macitbetter.com
+cask 'colorpicker-skalacolor' # bjango.com/mac/skalacolor
+cask 'docker' # docker.io
+cask 'dropbox' # dropbox.com
+cask 'etcher' # etcher.io
+cask 'github-desktop' # desktop.github.com
+cask 'google-chrome' # google.com/chrome
+cask 'google-chrome-canary' # google.com/chrome/browser/canary.html
+cask 'gpgtools' # gpgtools.org
+cask 'handbrake' # handbrake.fr
+cask 'hyper' # hyper.is
+cask 'imageoptim' # imageoptim.com/mac
+cask 'insomnia' # insomnia.rest
+cask 'kap' # getkap.co
+cask 'keepingyouawake' # github.com/newmarcel/KeepingYouAwake
+cask 'kitematic' # kitematic.com
+cask 'messenger' # messenger.com
+cask 'numi' # numi.io
+cask 'qlcolorcode' # github.com/n8gray/QLColorCode
+cask 'qlimagesize' # github.com/Nyx0uf/qlImageSize
+cask 'qlmarkdown' # github.com/toland/qlmarkdown
+cask 'qlstephen' # github.com/whomwah/qlstephen
+cask 'quicklook-csv' # github.com/p2/quicklook-csv
+cask 'quickjson' # github.com/johan/QuickJSON
+cask 'rocket' # matthewpalmer.net/rocket
+cask 'sequel-pro' # sequelpro.com
+cask 'sketch-toolbox' # sketchtoolbox.com
+cask 'slack' # slack.com
+cask 'spectacle' # spectacleapp.com
+cask 'spotify' # spotify.com
+cask 'suspicious-package' # mothersruin.com/software/SuspiciousPackage
+cask 'transmission' # transmissionbt.com
+cask 'virtualbox' # virtualbox.org
+cask 'vlc' # videolan.org/vlc

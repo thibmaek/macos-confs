@@ -1,14 +1,16 @@
 #!/usr/bin/env bash
 
-# Globally add this packages array
 packages=(
-  commitizen
+  fkill-cli
   generator-module-boilerplate
+  gitmoji-cli
+  hpm-cli
+  nativefier
   mklicense
-  node-gyp
+  serve
   speed-test
   yarn
   yo
 )
 
-npm install -g ${packages[@]}
+npm install -g npm ${packages[@]}
