@@ -34,7 +34,9 @@ brew 'wget', args: ['with-iri'] # gnu.org/software/wget
 # — Casks —
 cask 'atom' # atom.io
 cask 'betterzip' # macitbetter.com
+cask 'caprine' # https://github.com/sindresorhus/caprine
 cask 'colorpicker-skalacolor' # bjango.com/mac/skalacolor
+cask 'devdocs' # https://github.com/egoist/devdocs-app
 cask 'docker' # docker.io
 cask 'dropbox' # dropbox.com
 cask 'etcher' # etcher.io
