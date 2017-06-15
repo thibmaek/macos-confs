@@ -7,7 +7,7 @@ up and running with everything I need for my development workflow.
 It currently presets all of the following:
 * [macOS sensible defaults](https://github.com/mathiasbynens/dotfiles/blob/master/.macos)
 * [Brew](https://github.com/Homebrew/homebrew) (with casks)
-* Node (trough [nvm](https://github.com/creationix/nvm)) (with global packages trough yarn)
+* Node (trough [nvm](https://github.com/creationix/nvm)) (with global packages trough npm)
 * Ruby (trough [rbenv](https://github.com/rbenv/rbenv))
 * Python (trough [pyenv](https://github.com/yyuu/pyenv))
 * [Atom](https://github.com/atom/atom) (with apm packages & themes)
@@ -19,10 +19,10 @@ Just running it from the top is easy:
 
 ```shell
 git clone https://github.com/thibmaek/worker.git .worker && cd .worker
-./make
+./make.sh
 ```
 
-`make` is the file that points your shell to each specific module.  
+`make` is the file that points your shell to each specific module.
 If you want to turn certain modules of, just comment them out from `make`
 
 If you want to you can also install this on a file-per-file base, just run the .sh files inside of the modules directory. The extensions directory installs additional content to the modules.

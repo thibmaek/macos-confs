@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+packages=(
+  fkill-cli
+  generator-module-boilerplate
+  gitmoji-cli
+  hpm-cli
+  nativefier
+  mklicense
+  serve
+  speed-test
+  yarn
+  yo
+)
+
+npm install -g npm ${packages[@]}

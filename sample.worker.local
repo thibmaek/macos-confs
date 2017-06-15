@@ -19,7 +19,7 @@ git clone https://github.com/powerline/fonts $HOME/powerline-fonts && $HOME/powe
 rm -rf $HOME/powerline-fonts
 
 # Switch to using brew-installed bash as default shell
-if ! fgrep -q '/usr/local/bin/bash' /etc/shells; then
+if ! grep -q '/usr/local/bin/bash' /etc/shells; then
   echo '/usr/local/bin/bash' | sudo tee -a /etc/shells;
   chsh -s /usr/local/bin/bash;
 fi;
