@@ -25,28 +25,28 @@ brew bundle --file="$ROOT/extensions/Brewfile"
 echo "Downloading and installing nvm..."
 bash "$ROOT/modules/nvm.sh"
 
-# 5. Installing yarn and global packages
-echo "Installing yarn..."
-bash "$ROOT/extensions/yarn"
-
-# 6. Install Python versions for pyenv.
+# 5. Install Python versions for pyenv.
 echo "Installing pyenv versions..."
 bash "$ROOT/modules/python.sh"
 
 echo "Installing modules from pip..."
 bash "$ROOT/extensions/pip"
 
-# 7. Use the .gemrc file for Rubygems
+# 6. Use the .gemrc file for Rubygems
 echo "Presetting Ruby..."
 bash "$ROOT/modules/ruby.sh"
 
-# 8. Install Rubygems.
+# 7. Install Rubygems.
 echo "Installing some gems..."
 bundle install --gemfile="$ROOT/extensions/Gemfile"
 
-# 9. Install APM packages & themes
+# 8. Install APM packages & themes
 echo "Installing apm packages..."
 apm install --packages-file "$ROOT/extensions/Atomfile"
+
+# 9. Installing and downloading Go through gvm
+echo "Downloading and installing gvm..."
+bash "$ROOT/modules/gvm.sh"
 
 # 10. Perform additional local changes described in ./worker.local
 if [[ -f "$ROOT/worker.local" ]]; then bash "$ROOT/worker.local"; fi
