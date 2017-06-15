@@ -3,4 +3,4 @@ source "https://rubygems.org"
 gem 'cocoapods'
 gem 'jekyll'
 gem 'sass'
-gem 'scss_lint'
+gem 'scss_lint', require: false
