@@ -32,6 +32,7 @@ linter
 linter-clang
 linter-eslint
 linter-gcc
+linter-jsonlint
 linter-php
 linter-scss-lint
 linter-stylelint
@@ -47,6 +48,7 @@ nuclide-test-runner-jest
 panic-palette
 pigments
 postcss-sorting
+pretty-json
 qolor
 run-command
 sort-lines
