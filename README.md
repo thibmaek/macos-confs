@@ -10,6 +10,7 @@ It currently presets all of the following:
 * Node (trough [nvm](https://github.com/creationix/nvm)) (with global packages trough npm)
 * Ruby (trough [rbenv](https://github.com/rbenv/rbenv))
 * Python (trough [pyenv](https://github.com/yyuu/pyenv))
+* Go (trough [gvm](https://github.com/moovweb/gvm))
 * [Atom](https://github.com/atom/atom) (with apm packages & themes)
 
 This is great for setting up the tools you need. If you need to tweak the shell you might want to look into [my dotfiles](https://github.com/thibmaek/dotfiles).
