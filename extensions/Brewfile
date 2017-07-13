@@ -13,7 +13,7 @@ brew 'docker-completion' # github.com/docker/docker
 brew 'ffmpeg', args: ['with-faac'] # ffmpeg.org
 brew 'findutils', args: ['with-default-names'] # gnu.org/software/findutils
 brew 'git' # git-scm.org
-brew 'gpg' # gnupg.org
+brew 'gnupg' # gnupg.org
 brew 'grep', args: ['with-default-names'] # gnu.org/software/grep
 brew 'imagemagick', args: ['with-libtiff', 'with-webp'] # imagemagick.org/script/index.php
 brew 'mackup' # github.com/lra/mackup
