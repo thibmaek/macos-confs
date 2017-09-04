@@ -49,9 +49,7 @@ cask 'hyper' # hyper.is
 cask 'imageoptim' # imageoptim.com/mac
 cask 'insomnia' # insomnia.rest
 cask 'kap' # getkap.co
-cask 'keepingyouawake' # github.com/newmarcel/KeepingYouAwake
 cask 'kitematic' # kitematic.com
-cask 'messenger' # messenger.com
 cask 'numi' # numi.io
 cask 'qlcolorcode' # github.com/n8gray/QLColorCode
 cask 'qlimagesize' # github.com/Nyx0uf/qlImageSize
