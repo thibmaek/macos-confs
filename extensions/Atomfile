@@ -42,7 +42,6 @@ nord-atom-ui
 now-syntax
 npm-helper
 nuclide
-nuclide-test-runner-jest
 panic-palette
 pigments
 postcss-sorting
