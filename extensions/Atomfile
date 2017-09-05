@@ -50,6 +50,7 @@ qolor
 run-command
 sort-lines
 svg-preview
+sync-settings
 toggle-quotes
 tool-bar
 uglify
