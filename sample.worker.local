@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
 # Install syntax highlighting for `nano`
-wget https://raw.githubusercontent.com/scopatz/nanorc/master/install.sh | sh
+wget -P $HOME/.worker/ https://raw.githubusercontent.com/scopatz/nanorc/master/install.sh
+$HOME/.worker/install.sh && rm $HOME/.worker/install.sh
 
 # Set nano tabsize to 4 and prefer spaces
 cat <<EOF >> $HOME/.nanorc
@@ -10,7 +11,7 @@ set tabstospaces
 EOF
 
 # Download powerline-shell
-git clone https://github.com/banga/powerline-shell $HOME/.powerline-shell
+git clone https://github.com/banga/powerline-shell $HOME/.worker/powerline-shell
 wget https://gist.githubusercontent.com/thibmaek/5f4a1a3c9af2aa677135b103f8f9db74/raw/e766ae6518a6265e54ef1310aa5511a4cc788569/config.py -P $HOME/.powerline-shell/
 "$HOME/.powerline-shell/install.py"
 

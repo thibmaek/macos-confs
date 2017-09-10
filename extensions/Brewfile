@@ -26,6 +26,7 @@ brew 'rbenv' # github.com/rbenv/rbenv
 brew 'ruby-build' # github.com/rbenv/ruby-build
 brew 'ruby-completion' # github.com/mernen/completion-ruby
 brew 'screen' # gnu.org/software/screen
+brew 'shellcheck' # https://www.shellcheck.net/
 brew 'ssh-copy-id' # openssh.com
 brew 'trash' # hasseg.org/trash
 brew 'tree' # mama.indstate.edu/users/ice/tree

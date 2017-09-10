@@ -5,9 +5,9 @@
 # Comment out anything you dont want installed.
 # ***
 
-# Set this env to current dir, make everything executable
+# Set this env to current dir and export a workdir
 ROOT=$PWD
-for MODULE in $ROOT/modules/*; do chmod +x $MODULE; done
+mkdir -p "$HOME/.worker/"
 
 # 1. Install Command Line Tools.
 echo "Updating xcode-select..."
