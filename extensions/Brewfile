@@ -6,7 +6,7 @@ tap 'homebrew/command-not-found' # github.com/Homebrew/homebrew-command-not-foun
 # — Formulae —
 brew 'apm-bash-completion' # github.com/vigo/apm-bash-completion
 brew 'bash' # gnu.org/software/bash
-brew 'bash-completion' # github.com/scop/bash-completion
+brew 'bash-completion@2' # github.com/scop/bash-completion (for Bash >4 use bash-completion instead)
 brew 'ccat' # github.com/jingweno/ccat
 brew 'coreutils', args: ['with-default-names'] # gnu.org/software/coreutils/coreutils
 brew 'docker-completion' # github.com/docker/docker
