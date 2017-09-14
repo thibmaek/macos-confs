@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-# ***
+###
 # This file will start all tasks.
 # Comment out anything you dont want installed.
-# ***
+###
 
 # Set this env to current dir and export a workdir
 ROOT=$PWD
@@ -30,7 +30,7 @@ echo "Installing pyenv versions..."
 bash "$ROOT/modules/python.sh"
 
 echo "Installing modules from pip..."
-bash "$ROOT/extensions/pip"
+bash "$ROOT/extensions/pip.sh"
 
 # 6. Use the .gemrc file for Rubygems
 echo "Presetting Ruby..."
@@ -60,4 +60,4 @@ done
 
 echo "Done. Note that some of these changes require a logout/restart to take effect."
 echo "Now reloading shell..."
-exec $SHELL -l
+exec "$SHELL" -l

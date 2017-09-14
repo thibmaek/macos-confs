@@ -18,4 +18,4 @@ packages=(
 )
 
 # Default try and update npm as well
-npm install -g npm ${packages[@]}
+npm install -g npm "${packages[@]}"

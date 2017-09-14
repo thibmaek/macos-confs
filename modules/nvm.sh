@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# shellcheck disable=SC1090
 
 # Create .bash_profile if it doesn't exist
 if [[ ! -f ~/.bash_profile ]]; then touch ~/.bash_profile; fi
@@ -14,4 +15,4 @@ NVM_DIR="$HOME/.nvm"
 
 # Should grab the latest version available to nvm
 LATEST=$(nvm ls-remote | tail -1 | grep -E -o '.{0,0}v.{0,6}' | tr -d '\n')
-nvm install $LATEST
+nvm install "$LATEST"

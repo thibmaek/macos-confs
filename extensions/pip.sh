@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-module=(
+packages=(
   bottle
   glances
 )
 
-pip install ${packages[@]}
+pip install "${packages[@]}"

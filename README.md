@@ -19,12 +19,12 @@ This is great for setting up the tools you need. If you need to tweak the shell 
 Just running it from the top is easy:
 
 ```shell
-git clone https://github.com/thibmaek/worker.git .worker && cd .worker
-./make.sh
+git clone https://github.com/thibmaek/worker
+worker/worker.sh
 ```
 
-`make` is the file that points your shell to each specific module.
-If you want to turn certain modules of, just comment them out from `make`
+`worker.sh` is the file that points your shell to each specific module.
+If you want to turn certain modules of, just comment them out from `worker.sh`
 
 If you want to you can also install this on a file-per-file base, just run the .sh files inside of the modules directory. The extensions directory installs additional content to the modules.
 
@@ -32,7 +32,11 @@ If you want to you can also install this on a file-per-file base, just run the .
 No problem forking this over to your own account, but don't bother sending a PR because I won't merge it unless it's a bug fix (though I prefer to use the issues on this repo for that.)
 
 #### Testing
-There is a `test.local` script for locally running the tests.
-Tests are just shell scripts so you can add your own in.
+This project uses shellcheck for linting bash styles & convention to make it safer and easier to work with over multiple contributors. Main use is that it runs on the CI server, but you can test locally and lint directly in the editor as well:
 
-Run the local tests with `./test.local`
+```console
+sudo apt install shellcheck # 🐧 Linux
+brew install shellcheck # 🍎 macOS
+
+./test.sh (runscript for shellcheck worker.sh sample.worker.local ./**/*.sh)
+```

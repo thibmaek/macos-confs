@@ -2,14 +2,11 @@ os: osx
 osx_image: xcode7.3
 
 before_install:
-  - brew update
+  - brew install shellcheck
   - brew tap Homebrew/bundle
 
 install:
-  - brew bundle --file="$ROOT/extensions/Brewfile"
-
-before_script:
-  - for TEST in $ROOT/tests/*; do chmod +x $TEST; done
+  - brew bundle --file=extensions/Brewfile
 
 script:
-  - bash $ROOT/tests/nvm.test.sh
+  - shellcheck worker.sh sample.worker.local ./**/*.sh
