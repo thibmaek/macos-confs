@@ -1,25 +1,40 @@
 PWD = $(shell pwd)
 
-pre-install: mkdir -p "$HOME/.worker/" && xcode-select --install
+pre-install: mkdir -p "$HOME/.worker/"
+  xcode-select --install
 
 post-install: for APP in "Activity Monitor" "Address Book" "Calendar" "Contacts" "cfprefsd" \
   "Dock" "Finder" "Mail" "Messages" "Safari" "SystemUIServer" "Transmission" "Twitter"; do
 	  killall "${APP}" > /dev/null 2>&1
-  done && exec "$SHELL" -l
+  done
+  exec "$SHELL" -l
 
 install: install-base post-install
 
-install-base: pre-install .install_homebrew .install_python .install_ruby
+install-base:
+  pre-install
+  .install_homebrew
+  .install_python
+  .install_ruby
 
-install-advanced: install-base .install_node .install_atom .install_go .setup_local post-install
+install-advanced:
+  install-base
+  .install_node
+  .install_atom
+  .install_go
+  .setup_local
+  post-install
 
-.install_homebrew: bash $(PWD)/modules/brew.sh && brew bundle --file=$(PWD)/extensions/Brewfile
+.install_homebrew: bash $(PWD)/modules/brew.sh
+  brew bundle --file=$(PWD)/extensions/Brewfile
 
 .install_node: bash $(PWD)/modules/nvm.sh
 
-.install_python: bash $(PWD)/modules/python.sh && bash $(PWD)/extensions/pip.sh
+.install_python: bash $(PWD)/modules/python.sh
+  bash $(PWD)/extensions/pip.sh
 
-.install_ruby: bash $(PWD)/modules/ruby.sh && bundle install --gemfile=$(PWD)/extensions/Gemfile
+.install_ruby: bash $(PWD)/modules/ruby.sh
+  bundle install --gemfile=$(PWD)/extensions/Gemfile
 
 .install_atom: apm install --packages-file $(PWD)/extensions/Atomfile
 
