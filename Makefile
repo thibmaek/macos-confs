@@ -1,3 +1,6 @@
+# `make` default task
+install: install-base post-install
+
 PWD = $(shell pwd)
 
 pre-install: mkdir -p "$HOME/.worker/"
@@ -8,8 +11,6 @@ post-install: for APP in "Activity Monitor" "Address Book" "Calendar" "Contacts"
 	  killall "${APP}" > /dev/null 2>&1
   done
   exec "$SHELL" -l
-
-install: install-base post-install
 
 install-base:
   pre-install
