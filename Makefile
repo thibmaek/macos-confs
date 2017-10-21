@@ -20,16 +20,16 @@ install-base:
 
 install-advanced:
   install-base
-  .install_node
+  .install_nvm
   .install_atom
-  .install_go
+  .install_gvm
   .setup_local
   post-install
 
 .install_homebrew: bash $(PWD)/modules/brew.sh
   brew bundle --file=$(PWD)/extensions/Brewfile
 
-.install_node: bash $(PWD)/modules/nvm.sh
+.install_nvm: bash $(PWD)/modules/nvm.sh
 
 .install_python: bash $(PWD)/modules/python.sh
   bash $(PWD)/extensions/pip.sh
@@ -39,6 +39,6 @@ install-advanced:
 
 .install_atom: apm install --packages-file $(PWD)/extensions/Atomfile
 
-.install_go: bash $(PWD)/modules/gvm.sh
+.install_gvm: bash $(PWD)/modules/gvm.sh
 
 .setup_local: if [[ -f "$ROOT/worker.local" ]]; then bash "$ROOT/worker.local"; fi
