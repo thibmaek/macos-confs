@@ -18,6 +18,9 @@ wget -P "$HOME/" https://gist.githubusercontent.com/thibmaek/5f4a1a3c9af2aa67713
 git clone https://github.com/powerline/fonts "$HOME/powerline-fonts" && "$HOME/powerline-fonts/install.sh"
 rm -rf "$HOME/powerline-fonts"
 
+# Download and move Spectacle.app shortcuts
+wget -P "$HOME/Library/Application Support/Spectacle/" https://gist.githubusercontent.com/thibmaek/fe4eaf4129e28940b64c797d56f0f60a/raw/a57ca122af4ef12106c052bed4f35e8f320671a2/Shortcuts.json
+
 # Switch to using brew-installed bash as default shell
 if ! grep -q '/usr/local/bin/bash' /etc/shells; then
   echo '/usr/local/bin/bash' | sudo tee -a /etc/shells;
