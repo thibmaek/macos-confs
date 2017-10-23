@@ -6,7 +6,6 @@ function install_brew() {
   else
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
     brew doctor
-    brew tap Homebrew/bundle
   fi
 }
 
