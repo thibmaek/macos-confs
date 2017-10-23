@@ -1,6 +1,5 @@
 # — Taps —
 tap 'homebrew/aliases' # github.com/Homebrew/homebrew-aliases
-tap 'homebrew/dupes' # github.com/Homebrew/homebrew-dupes
 tap 'homebrew/command-not-found' # github.com/Homebrew/homebrew-command-not-found
 
 # — Formulae —
