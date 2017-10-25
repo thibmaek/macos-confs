@@ -1,3 +1,4 @@
+atom-import-cost
 autocomplete-json
 autocomplete-modules
 autocomplete-paths
@@ -57,9 +58,14 @@ pretty-json
 pristine-ui
 pure-syntax
 qolor
+remember-folds
 run-command
+scroll-sync
 sort-lines
 svg-preview
 sync-settings
+tester
+tester-jest
 tool-bar
+tool-bar-atom
 zentabs
