@@ -20,11 +20,17 @@ editorconfig
 file-icons
 filesize
 font-viewer
+git-blame
 git-time-machine
 gloom
 gpp-compiler
 highlight-selected
+hyperclick
 hyperlink-hyperclick
+ide-css
+ide-html
+ide-json
+ide-yaml
 intentions
 js-hyperclick
 jsonlint
@@ -52,6 +58,7 @@ modular-snippets
 nord-atom-syntax
 nord-atom-ui
 nuclide
+nuclide-format-js
 pigments
 postcss-sorting
 pretty-json
