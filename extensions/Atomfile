@@ -32,6 +32,7 @@ ide-html
 ide-json
 ide-yaml
 intentions
+jackhammer-syntax
 js-hyperclick
 jsonlint
 language-babel
@@ -71,6 +72,7 @@ scroll-sync
 sort-lines
 svg-preview
 sync-settings
+teletype
 tester
 tester-jest
 tool-bar
