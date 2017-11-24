@@ -1,6 +1,7 @@
 # — Taps —
 tap 'homebrew/aliases' # github.com/Homebrew/homebrew-aliases
 tap 'homebrew/command-not-found' # github.com/Homebrew/homebrew-command-not-found
+tap 'caskroom/fonts' # github.com/caskroom/homebrew-fonts
 
 # — Formulae —
 brew 'apm-bash-completion' # github.com/vigo/apm-bash-completion
@@ -68,3 +69,7 @@ cask 'tableplus' # tableplus.io
 cask 'transmission' # transmissionbt.com
 cask 'virtualbox' # virtualbox.org
 cask 'vlc' # videolan.org/vlc
+
+# — Fonts —
+cask 'font-hack'
+cask 'font-ibm-plex'
