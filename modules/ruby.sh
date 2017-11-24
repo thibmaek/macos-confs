@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Using rbenv over macOS pre-installed Ruby in Brewfile
-rbenv init
+eval "$(rbenv init -)"
 
 rbenv install 2.4.0
 rbenv global 2.4.0
