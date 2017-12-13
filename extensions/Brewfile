@@ -17,7 +17,7 @@ brew 'gnupg' # gnupg.org
 brew 'grep', args: ['with-default-names'] # gnu.org/software/grep
 brew 'imagemagick', args: ['with-libtiff', 'with-webp'] # imagemagick.org/script/index.php
 brew 'mackup' # github.com/lra/mackup
-brew 'make', args: ['with-default-names'] # https://www.gnu.org/software/make/
+brew 'make', args: ['with-default-names'] # www.gnu.org/software/make/
 brew 'mas' # github.com/mas-cli/mas
 brew 'nano' # nano-editor.org
 brew 'nmap' # nmap.org
@@ -28,24 +28,25 @@ brew 'rbenv' # github.com/rbenv/rbenv
 brew 'ruby-build' # github.com/rbenv/ruby-build
 brew 'ruby-completion' # github.com/mernen/completion-ruby
 brew 'screen' # gnu.org/software/screen
-brew 'shellcheck' # https://www.shellcheck.net/
+brew 'shellcheck' # www.shellcheck.net/
 brew 'ssh-copy-id' # openssh.com
 brew 'trash' # hasseg.org/trash
 brew 'tree' # mama.indstate.edu/users/ice/tree
 brew 'wget', args: ['with-iri'] # gnu.org/software/wget
 
 # — Casks —
+cask '1password' # 1password.com
 cask 'atom' # atom.io
 cask 'betterzip' # macitbetter.com
-cask 'caprine' # https://github.com/sindresorhus/caprine
+cask 'caprine' # github.com/sindresorhus/caprine
 cask 'colorpicker-skalacolor' # bjango.com/mac/skalacolor
-cask 'devdocs' # https://github.com/egoist/devdocs-app
+cask 'devdocs' # github.com/egoist/devdocs-app
 cask 'docker' # docker.io
 cask 'dropbox' # dropbox.com
 cask 'etcher' # etcher.io
 cask 'github-desktop' # desktop.github.com
 cask 'google-chrome' # google.com/chrome
-cask 'gpgtools' # gpgtools.org
+cask 'gpg-suite' # gpgtools.org
 cask 'handbrake' # handbrake.fr
 cask 'hyper' # hyper.is
 cask 'imageoptim' # imageoptim.com/mac
@@ -68,8 +69,12 @@ cask 'suspicious-package' # mothersruin.com/software/SuspiciousPackage
 cask 'tableplus' # tableplus.io
 cask 'transmission' # transmissionbt.com
 cask 'virtualbox' # virtualbox.org
+cask 'visual-studio-code' # code.visualstudio.com
 cask 'vlc' # videolan.org/vlc
 
 # — Fonts —
+cask 'font-fira-code'
+cask 'font-fira-mono'
+cask 'font-fira-sans'
 cask 'font-hack'
 cask 'font-ibm-plex'
