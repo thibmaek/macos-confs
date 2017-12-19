@@ -3,6 +3,7 @@ autocomplete-json
 autocomplete-modules
 autocomplete-paths
 autocomplete-xml
+autumn-highlighter-syntax
 build
 build-cmake
 build-dockerfile
