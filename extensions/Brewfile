@@ -1,6 +1,7 @@
 # — Taps —
 tap 'homebrew/aliases' # github.com/Homebrew/homebrew-aliases
 tap 'homebrew/command-not-found' # github.com/Homebrew/homebrew-command-not-found
+tap 'homebrew/services' # github.com/Homebrew/homebrew-services
 tap 'caskroom/fonts' # github.com/caskroom/homebrew-fonts
 
 # — Formulae —
