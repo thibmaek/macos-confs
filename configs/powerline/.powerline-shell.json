@@ -1,0 +1,12 @@
+{
+  "segments": [
+    "ssh",
+    "cwd",
+    "read_only",
+    "git",
+    "jobs",
+    "exit_code",
+    "root"
+  ],
+  "theme": "washed"
+}
