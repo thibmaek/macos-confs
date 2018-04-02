@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 function pretty_print() {
-  printf "\n\033[1m\033[34m%s\033[0m\n\n" "[macos-confs] ${1}…"
+  printf '\n\033[1m\033[34m%s\033[0m\n\n' "[macos-confs] ${1}…"
 }
 
 function install_pyenv() {
@@ -20,9 +20,11 @@ function install_pyenv() {
 
     curl -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer | bash
 
-    echo "export PATH=\"${PYENV_ROOT}/bin:\$PATH\"" >> "$HOME/.bash_profile"
-    echo "eval \"\$(pyenv init -)\"" >> "$HOME/.bash_profile"
-    echo "eval \"\$(pyenv virtualenv-init -)\"" >> "$HOME/.bash_profile"
+    {
+      echo "export PATH=\"${PYENV_ROOT}/bin:\$PATH\""
+      echo "eval \"\$(pyenv init -)\""
+      echo "eval \"\$(pyenv virtualenv-init -)\""
+    } >> "$HOME/.bash_profile"
   fi
 }
 

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 function pretty_print() {
-  printf "\n\033[1m\033[34m%s\033[0m\n\n" "[macos-confs] ${1}…"
+  printf '\n\033[1m\033[34m%s\033[0m\n\n' "[macos-confs] ${1}…"
 }
 
 function install_brew_bash() {
@@ -16,7 +16,6 @@ function install_brew_bash() {
     echo '/usr/local/bin/bash' | sudo tee -a /etc/shells;
     chsh -s /usr/local/bin/bash;
   fi;
-
 }
 
 install_brew_bash
