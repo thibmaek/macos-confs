@@ -38,14 +38,15 @@ brew 'wget', args: ['with-iri'] # gnu.org/software/wget
 
 # — Casks —
 cask '1password' # 1password.com
-cask 'atom' # atom.io
+cask 'alfred' # www.alfredapp.com
+cask 'angry-ip-scanner' # angryip.org
 cask 'betterzip' # macitbetter.com
-cask 'caprine' # github.com/sindresorhus/caprine
+cask 'coconut-batter' # www.coconut-flavour.com/coconutbattery/
 cask 'colorpicker-skalacolor' # bjango.com/mac/skalacolor
 cask 'devdocs' # github.com/egoist/devdocs-app
 cask 'docker' # docker.io
-cask 'dropbox' # dropbox.com
 cask 'etcher' # etcher.io
+cask 'franz' # meetfranz.com
 cask 'github-desktop' # desktop.github.com
 cask 'google-chrome' # google.com/chrome
 cask 'gpg-suite' # gpgtools.org
@@ -63,12 +64,10 @@ cask 'quicklook-csv' # github.com/p2/quicklook-csv
 cask 'quickjson' # github.com/johan/QuickJSON
 cask 'rocket' # matthewpalmer.net/rocket
 cask 'sequel-pro' # sequelpro.com
-cask 'slack' # slack.com
 cask 'spectacle' # spectacleapp.com
 cask 'spotify' # spotify.com
-cask 'spotmenu' # github.com/kmikiy/SpotMenu
+cask 'superduper' # www.shirt-pocket.com/SuperDuper/SuperDuperDescription.html
 cask 'suspicious-package' # mothersruin.com/software/SuspiciousPackage
-cask 'tableplus' # tableplus.io
 cask 'transmission' # transmissionbt.com
 cask 'virtualbox' # virtualbox.org
 cask 'visual-studio-code' # code.visualstudio.com
