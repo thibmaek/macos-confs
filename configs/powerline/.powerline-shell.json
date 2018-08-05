@@ -1,12 +1,15 @@
 {
   "segments": [
     "ssh",
-    "cwd",
+    "root",
+    "time",
     "read_only",
-    "git",
+    "cwd",
     "jobs",
+    "git",
+    "git_stash",
     "exit_code",
-    "root"
+    "newline"
   ],
   "theme": "washed"
 }
