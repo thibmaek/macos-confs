@@ -44,8 +44,10 @@ function install_pip_pkgs() {
   local packages=(
     bottle
     glances
-    powerline-shell
   )
+
+  pretty_print "🐍 Upgrading pip to latest version"
+  pip install --upgrade pip
 
   pretty_print "📦 Installing global pip packages (${packages[*]})"
 
