@@ -27,9 +27,7 @@ function install_npm_modules() {
   local packages=(
     create-react-app
     create-react-native-app
-    fkill-cli
     nativefier
-    react-native-cli
     serve
     speed-test
   )
