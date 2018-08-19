@@ -5,8 +5,6 @@ tap 'homebrew/services' # github.com/Homebrew/homebrew-services
 tap 'caskroom/fonts' # github.com/caskroom/homebrew-fonts
 
 # — Formulae —
-brew 'apm-bash-completion' # github.com/vigo/apm-bash-completion
-brew 'bash' # gnu.org/software/bash
 brew 'bash-completion@2' # github.com/scop/bash-completion (for Bash >4 use bash-completion instead)
 brew 'ccat' # github.com/jingweno/ccat
 brew 'coreutils', args: ['with-default-names'] # gnu.org/software/coreutils/coreutils
@@ -17,17 +15,11 @@ brew 'git' # git-scm.org
 brew 'gnupg' # gnupg.org
 brew 'grep', args: ['with-default-names'] # gnu.org/software/grep
 brew 'imagemagick', args: ['with-libtiff', 'with-webp'] # imagemagick.org/script/index.php
-brew 'mackup' # github.com/lra/mackup
 brew 'magic-wormhole' # github.com/warner/magic-wormhole
 brew 'make', args: ['with-default-names'] # www.gnu.org/software/make/
-brew 'mas' # github.com/mas-cli/mas
 brew 'nano' # nano-editor.org
 brew 'nmap' # nmap.org
-brew 'node' # nodejs.org
 brew 'openssl' # openssl.org
-brew 'pyenv' # github.com/yyuu/pyenv
-brew 'rbenv' # github.com/rbenv/rbenv
-brew 'ruby-build' # github.com/rbenv/ruby-build
 brew 'ruby-completion' # github.com/mernen/completion-ruby
 brew 'screen' # gnu.org/software/screen
 brew 'shellcheck' # www.shellcheck.net/
@@ -41,13 +33,13 @@ cask '1password' # 1password.com
 cask 'alfred' # www.alfredapp.com
 cask 'angry-ip-scanner' # angryip.org
 cask 'betterzip' # macitbetter.com
-cask 'coconut-batter' # www.coconut-flavour.com/coconutbattery/
+cask 'coconutbattery' # www.coconut-flavour.com/coconutbattery/
 cask 'colorpicker-skalacolor' # bjango.com/mac/skalacolor
 cask 'devdocs' # github.com/egoist/devdocs-app
 cask 'docker' # docker.io
 cask 'etcher' # etcher.io
+cask 'fork' # https://git-fork.com/
 cask 'franz' # meetfranz.com
-cask 'github-desktop' # desktop.github.com
 cask 'google-chrome' # google.com/chrome
 cask 'gpg-suite' # gpgtools.org
 cask 'handbrake' # handbrake.fr
@@ -56,6 +48,7 @@ cask 'imageoptim' # imageoptim.com/mac
 cask 'insomnia' # insomnia.rest
 cask 'kap' # getkap.co
 cask 'kitematic' # kitematic.com
+cask 'notion' # https://www.notion.so/
 cask 'qlcolorcode' # github.com/n8gray/QLColorCode
 cask 'qlimagesize' # github.com/Nyx0uf/qlImageSize
 cask 'qlmarkdown' # github.com/toland/qlmarkdown
