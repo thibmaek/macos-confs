@@ -11,10 +11,12 @@ function install_brew_bash() {
   brew install bash
 
   pretty_print "⚠️ Changing from BSD bash (macOS) to GNU bash (brew)"
-  pretty_print "Reloading the shell by restarting your terminal or with exec \$SHELL -l is advised"
   if ! grep -q '/usr/local/bin/bash' /etc/shells; then
     echo '/usr/local/bin/bash' | sudo tee -a /etc/shells;
     chsh -s /usr/local/bin/bash;
+
+    pretty_print "Auto-reloading your shell by executing a login shell"
+    exec "$SHELL" -l
   fi;
 }
 
