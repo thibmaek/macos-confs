@@ -5,7 +5,7 @@ function pretty_print() {
 }
 
 function install_rbenv() {
-  if which brew > /dev/null; then
+  if which brew > /dev/null && ! which rbenv > /dev/null; then
     pretty_print "🍻 Installing rbenv with brew"
 
     brew install rbenv
@@ -14,8 +14,6 @@ function install_rbenv() {
     eval "$(rbenv init -)"
     echo "if which rbenv > /dev/null; then eval \"\$(rbenv init -)\"; fi" >> "$HOME/.bash_profile"
   else
-    if which rbenv > /dev/null; then pretty_print "⚠️ rbenv already installed" && exit 1; fi
-
     pretty_print "📦 Installing rbenv from source (curl script)"
 
     curl -fsSL https://github.com/rbenv/rbenv-installer/raw/master/bin/rbenv-installer | bash
