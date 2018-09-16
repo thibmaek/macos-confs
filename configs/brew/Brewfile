@@ -6,8 +6,9 @@ tap 'caskroom/fonts' # github.com/caskroom/homebrew-fonts
 
 # — Formulae —
 brew 'bash-completion@2' # github.com/scop/bash-completion (for Bash >4 use bash-completion instead)
-brew 'ccat' # github.com/jingweno/ccat
+brew 'bat' # https://github.com/sharkdp/bat
 brew 'coreutils', args: ['with-default-names'] # gnu.org/software/coreutils/coreutils
+brew 'diff-so-fancy' # https://github.com/so-fancy/diff-so-fancy
 brew 'docker-completion' # github.com/docker/docker
 brew 'ffmpeg', args: ['with-faac'] # ffmpeg.org
 brew 'findutils', args: ['with-default-names'] # gnu.org/software/findutils
