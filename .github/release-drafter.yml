@@ -1,0 +1,10 @@
+template: |
+  Prev version: $PREVIOUS_TAG
+
+  # Changelog
+
+  $CHANGES
+
+  ## Contributors
+
+  $CONTRIBUTORS
