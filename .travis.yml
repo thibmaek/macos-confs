@@ -1,12 +1,15 @@
-os: osx
-osx_image: xcode9.3beta
+matrix:
+  include:
+    # Brew
+    # - os: osx
+    #   osx_image: xcode10
+    #   before_install:
+    #     - brew tap Homebrew/bundle
+    #   install:
+    #     - brew bundle --file=extensions/Brewfile
 
-before_install:
-  - brew install shellcheck
-#   - brew tap Homebrew/bundle
-
-# install:
-#   - brew bundle --file=extensions/Brewfile
-
-script:
-  - bash test.sh
+    # Bash
+    - language: shell
+      sudo: false
+      script:
+        - bash test.sh
