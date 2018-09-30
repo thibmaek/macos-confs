@@ -5,7 +5,7 @@ function pretty_print() {
 }
 
 function install_brew() {
-  if make --version > /dev/null; then pretty_print "❗️ Commandline tools (xcode-select) not installed" && exit 1; fi
+  if ! make --version > /dev/null; then pretty_print "❗️ Commandline tools (xcode-select) not installed" && exit 1; fi
 
   if command -v brew > /dev/null; then pretty_print "🍻 Brew already installed" && exit 1; fi
 
