@@ -5,7 +5,7 @@ function pretty_print() {
 }
 
 function download_dotfiles() {
-  if ! which git > /dev/null; then pretty_print "❗️ git was not found on PATH" && exit 1; fi
+  if ! command -v git > /dev/null; then pretty_print "❗️ git was not found on PATH" && exit 1; fi
 
   pretty_print "📦 Downloading dotfiles repo from thibmaek/dotfiles through Github"
   git clone https://github.com/thibmaek/dotfiles "$HOME/.dotfiles-src"

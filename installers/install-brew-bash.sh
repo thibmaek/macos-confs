@@ -5,7 +5,7 @@ function pretty_print() {
 }
 
 function install_brew_bash() {
-  if ! which brew > /dev/null; then pretty_print "❗️ brew not installed" && exit 1; fi
+  if ! command -v brew > /dev/null; then pretty_print "❗️ brew not installed" && exit 1; fi
 
   pretty_print "🍻 Installing GNU bash (through brew)"
   brew install bash

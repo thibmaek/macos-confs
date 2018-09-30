@@ -5,16 +5,16 @@ function pretty_print() {
 }
 
 function install_pyenv() {
-  if which brew > /dev/null; then
+  if command -v brew > /dev/null; then
     pretty_print "🍻 Installing pyenv with brew"
 
     brew install pyenv
 
     pretty_print "You should run brew info pyenv and read the caveats about putting the eval() in your profile"
     eval "$(pyenv init -)"
-    echo "if which pyenv > /dev/null; then eval \"\$(pyenv init -)\"; fi" >> "$HOME/.bash_profile"
+    echo "if command -v pyenv > /dev/null; then eval \"\$(pyenv init -)\"; fi" >> "$HOME/.bash_profile"
   else
-    if which pyenv > /dev/null; then pretty_print "⚠️ pyenv already installed" && exit 1; fi
+    if command -v pyenv > /dev/null; then pretty_print "⚠️ pyenv already installed" && exit 1; fi
 
     pretty_print "📦 Installing pyenv from source (curl script)"
 
@@ -29,7 +29,7 @@ function install_pyenv() {
 }
 
 function install_python() {
-  if ! which pyenv > /dev/null; then pretty_print "❗️ pyenv not found in PATH" && exit 1; fi
+  if ! command -v pyenv > /dev/null; then pretty_print "❗️ pyenv not found in PATH" && exit 1; fi
 
   pretty_print "🐍 Installing Python 3.6.4 & 2.7.14 (default) with pyenv"
 
@@ -39,7 +39,7 @@ function install_python() {
 }
 
 function install_pip_pkgs() {
-  if ! which pip > /dev/null; then pretty_print "❗️ pip not found in PATH" && exit 1; fi
+  if ! command -v pip > /dev/null; then pretty_print "❗️ pip not found in PATH" && exit 1; fi
 
   local packages=(
     bottle

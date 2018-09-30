@@ -54,7 +54,7 @@ fi
 Add to your profile, sources file, exports… :
 
 ```bash
-if which brew > /dev/null && [ -f "$(brew --prefix)/etc/bash_completion.d" ]; then
+if command -v brew > /dev/null && [ -f "$(brew --prefix)/etc/bash_completion.d" ]; then
   source "$(brew --prefix)/etc/bash_completion.d"
 fi
 ```

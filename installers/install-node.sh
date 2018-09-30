@@ -5,12 +5,12 @@ function pretty_print() {
 }
 
 function install_node() {
-  if which brew > /dev/null; then
+  if command -v brew > /dev/null; then
     pretty_print "🍻 Installing node (latest) with brew"
 
     brew install node
   else
-    if which node > /dev/null; then pretty_print "⚠️ node already installed" && exit 1; fi
+    if command -v node > /dev/null; then pretty_print "⚠️ node already installed" && exit 1; fi
 
     pretty_print "📦 Installing node from source (curl script & .pkg)"
     pretty_print "❗️ This method installs node as the root user, and is considered a security risk"
@@ -22,7 +22,7 @@ function install_node() {
 }
 
 function install_npm_modules() {
-  if ! which npm > /dev/null; then pretty_print "❗️ npm not installed" && exit 1; fi
+  if ! command -v npm > /dev/null; then pretty_print "❗️ npm not installed" && exit 1; fi
 
   local packages=(
     create-react-app

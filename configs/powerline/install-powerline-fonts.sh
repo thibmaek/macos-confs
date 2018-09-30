@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 function pretty_print() {
-  printf "\n\033[1m\033[34m%s\033[0m\n\n" "[macos-confs] ${1}…"
+  printf "\\n\\033[1m\\033[34m%s\\033[0m\\n\\n" "[macos-confs] ${1}…"
 }
 
 function install_powerline_fonts() {
@@ -13,7 +13,7 @@ function install_powerline_fonts() {
   rm -rf "$HOME/.powerline-fonts-src"
 }
 
-if which powerline-shell > /dev/null; then
+if command -v powerline-shell > /dev/null; then
   install_powerline_fonts;
 else
   pretty_print "❗️ powerline-shell not installed" && exit 1

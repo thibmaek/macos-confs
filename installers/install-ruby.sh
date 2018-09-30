@@ -5,14 +5,14 @@ function pretty_print() {
 }
 
 function install_rbenv() {
-  if which brew > /dev/null && ! which rbenv > /dev/null; then
+  if command -v brew > /dev/null && ! command -v rbenv > /dev/null; then
     pretty_print "🍻 Installing rbenv with brew"
 
     brew install rbenv
 
     pretty_print "You should run brew info rbenv and read the caveats about putting the eval() in your profile"
     eval "$(rbenv init -)"
-    echo "if which rbenv > /dev/null; then eval \"\$(rbenv init -)\"; fi" >> "$HOME/.bash_profile"
+    echo "if command -v rbenv > /dev/null; then eval \"\$(rbenv init -)\"; fi" >> "$HOME/.bash_profile"
   else
     pretty_print "📦 Installing rbenv from source (curl script)"
 
@@ -24,7 +24,7 @@ function install_rbenv() {
 }
 
 function install_ruby() {
-  if ! which rbenv > /dev/null; then pretty_print "❗️ rbenv not found in PATH" && exit 1; fi
+  if ! command -v rbenv > /dev/null; then pretty_print "❗️ rbenv not found in PATH" && exit 1; fi
 
   pretty_print "💎 Installing Ruby 2.5.0 (default) with rbenv"
 
@@ -33,7 +33,7 @@ function install_ruby() {
 }
 
 function install_gems() {
-  if ! which gem > /dev/null; then pretty_print "❗️ gem not found in PATH" && exit 1; fi
+  if ! command -v gem > /dev/null; then pretty_print "❗️ gem not found in PATH" && exit 1; fi
 
   local packages=(
     bundler
