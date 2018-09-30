@@ -9,4 +9,4 @@
 
 # Extensions
 
-- Manually copy and paste package ids from `vscode_extensions.txt` into Extensions in VS Code (cmd+shift+x)
+- Run `install_extensions.sh` to automatically install extensions, then start or reload VS Code.
