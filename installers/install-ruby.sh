@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+set -e
 
 function pretty_print() {
   printf '\n\033[1m\033[34m%s\033[0m\n\n' "[macos-confs] ${1}…"
@@ -45,4 +46,8 @@ function install_gems() {
   gem install "${packages[@]}"
 }
 
-install_rbenv && install_ruby && install_gems
+read -rp "This will install Ruby through rbenv, the bundler gem and set it as default Ruby instance. Are you sure? (y/n) " -n 1
+echo ""
+if [[ $REPLY =~ ^[Yy]$ ]]; then
+  install_rbenv && install_ruby && install_gems
+fi

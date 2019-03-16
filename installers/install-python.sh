@@ -33,10 +33,12 @@ function install_pyenv() {
 }
 
 function install_pip_pkgs() {
-  if ! command -v pip > /dev/null; then pretty_print "❗️ pip not found in PATH" && exit 1; fi
+  if ! command -v pip > /dev/null; then
+    pretty_print "❗️ pip not found in PATH"
+    exit 1
+  fi
 
   local packages=(
-    glances
     virtualenv
   )
 
@@ -48,4 +50,9 @@ function install_pip_pkgs() {
   pip install "${packages[@]}"
 }
 
-install_pyenv && install_python && install_pip_pkgs
+read -rp "This will install Python through pyenv, the virtualenv package and set it as default Python instance. Are you sure? (y/n) " -n 1
+echo ""
+if [[ $REPLY =~ ^[Yy]$ ]]; then
+  install_pyenv && install_python && install_pip_pkgs
+fi
+
